@@ -75,26 +75,14 @@ ___
 
 > [⇧ **Nach oben**](#inhaltsverzeichnis)
 
-Als erster Schritt muss ein GitHub-Account eingerichtet werden. Dieser dient uns später als "Cloud-Speicher" unserer Dokumentation und weiteren Dateien.
 
-Folgende Arbeiten müssen gemacht werden:
-
-### Account erstellen
+### SSH-Keys lokal erstellen (z.B. auf Laptop)
 ***
-1. Auf www.github.com ein Benutzerkonto erstellen (Angabe von Username, E-Mail und Passwort)
-2. E-Mail zur Verifizierung des Kontos bestätigen und anschliessend auf GitHub anmelden
-
-
-   
-### SSH-Key erstellen (lokal)
-***
-
-**ACHTUNG**: Auf Windows muss zuerst [Git/Bash](#--02---git-client) installiert werden. Anschliessend können die Befehle in der Git/Bash ausgeführt werden. Dabei handelt es sich nur um die Shell von Linux, die auf Windows ausgeführt wird. Alternativ können Sie für die meisten Befehle auch die *PowerShell* verwenden.
 
 1.  Terminal (*Bash*) öffnen
 2.  Folgenden Befehl mit der Account-E-Mail von GitHub einfügen:
     ```Shell
-      $  ssh-keygen -t rsa -b 4096 -C "beispiel@beispiel.com"
+      $  ssh-keygen -t rsa -b 4096 -C "livio.brugger@edu.tbz.ch"
     ```
 3. Neuer SSH-Key wird erstellt:
     ```Shell

@@ -35,17 +35,6 @@ In der Kommandozeile bzw. im Terminal läuft die "Bash" Shell. Das ist nur die S
 
 Diese Umgebung wird verwendet, weil benötige Programme wie `git`, `ssh-keygen` in der Powershell nicht zur Verfügung stehen. 
 
-#### Unix-Befehle
-
-Um sich im Filesystem zurechtzufinden, sind folgende Unix-Commands nützlich:
-* `cd /Verzeichnis` wechselt in Verzeichnis z.B. `cd /Users`, alternativ kann die Windows Schreibweise in " verwendet werden, z.B. `cd "C:\Users"`
-* Alternativ kann im Windows Explorer jederzeit ein Terminal mittels rechter Maustaste und `Git Bash Here` geöffnet werden.
-* `cd ~` Wechsel ins eigene Home-Verzeichnis. Dort werden SSH-Keys etc. abgelegt.
-* `cd -` wird auf das zuletzt verwendete Verzeichnis gewechselt.
-* Die Laufwerke von Windows stehen als `/c`, `/d/` zur Verfügung, Bsp. `cd /c/Users` und `cd "C:\Users"` sind indentisch
-* `ls -l` zeigt die Dateien im aktuellen Verzeichnis an
-* `pwd` zeigt den aktuellen Pfad an.
-* Die Windows Befehle stehen auch im Terminal zur Verfügung, z.B. `notepad README.md` 
 
 #### Inhaltsverzeichnis
 
@@ -68,14 +57,16 @@ ___
 #### Unix-Befehle
 
 Um sich im Filesystem zurechtzufinden, sind folgende Unix-Commands nützlich:
+* `pwd` zeigt den aktuellen Pfad an.
 * `cd /Verzeichnis` wechselt in Verzeichnis z.B. `cd /Users`, alternativ kann die Windows Schreibweise in " verwendet werden, z.B. `cd "C:\Users"`
 * Alternativ kann im Windows Explorer jederzeit ein Terminal mittels rechter Maustaste und `Git Bash Here` geöffnet werden.
 * `cd ~` Wechsel ins eigene Home-Verzeichnis. Dort werden SSH-Keys etc. abgelegt.
 * `cd -` wird auf das zuletzt verwendete Verzeichnis gewechselt.
 * Die Laufwerke von Windows stehen als `/c`, `/d/` zur Verfügung, Bsp. `cd /c/Users` und `cd "C:\Users"` sind indentisch
 * `ls -l` zeigt die Dateien im aktuellen Verzeichnis an
-* `pwd` zeigt den aktuellen Pfad an.
-* Die Windows Befehle stehen auch im Terminal zur Verfügung, z.B. `notepad README.md`  
+* `ls -al` zeigt sämtliche Dateien im aktuellen Verzeichnis an (auch die versteckten, wie z.B. **.ssh**, wo sämtliche Keys abgelegt werden)
+* Die Windows Befehle stehen auch im Terminal zur Verfügung, z.B. `notepad README.md` 
+ 
 
 ___
 

@@ -25,7 +25,7 @@ SSH richtig verstehen und praktisch anwenden
 * Internetanschluss *(allenfalls VPN-Zugang zu Cloud-Umgebung)*
 
 
-### Terminal (Kommandozeile) 
+#### Terminal (Kommandozeile) 
 
 ![](images/Gitbash_Logo_36x36.png "Gitbash") 
 

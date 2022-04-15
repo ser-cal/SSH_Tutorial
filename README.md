@@ -38,7 +38,7 @@ Diese Umgebung wird verwendet, weil benötige Programme wie `git`, `ssh-keygen` 
 #### Inhaltsverzeichnis
 
 * 01 - [Wichtige Linux-Kommandos](#-01---Wichtige-Linux-Kommandos)
-* 02 - [Zentrale SSH Konfigurationsfiles](#--02---Zentrale-SSH-Konfigurationsfiles)
+* 02 - [Zentrale SSH Konfigurationsfiles](#-02---Zentrale-SSH-Konfigurationsfiles)
 * 03 - [SSH Keypair erstellen](#-03---SSH-Keypair-erstellen)
 * 02 - [Git Client](#--02---git-client)
 * 03 - [VirtualBox](#--03---virtualbox)

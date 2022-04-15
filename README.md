@@ -38,8 +38,7 @@ Diese Umgebung wird verwendet, weil benötige Programme wie `git`, `ssh-keygen` 
 #### Inhaltsverzeichnis
 
 * 01 - [Wichtige Linux-Kommandos](#-01---Wichtige-Linux-Kommandos)
-* 02 - [Zentrale SSH Konfigurationsfiles](#-02---Zentrale-SSH-Konfigurationsfiles)
-* 03 - [SSH Keypair erstellen](#-03---SSH-Keypair-erstellen)
+* 02 - [SSH Keypair erstellen](#-02---SSH-Keypair-erstellen)
 * 02 - [Git Client](#--02---git-client)
 * 03 - [VirtualBox](#--03---virtualbox)
 * 04 - [Vagrant](#--04---vagrant)
@@ -67,14 +66,6 @@ Um sich im Filesystem zurechtzufinden, sind folgende Unix-Commands nützlich:
 * `ls -al` zeigt sämtliche Dateien im aktuellen Verzeichnis an (auch die versteckten, wie z.B. **.ssh**, wo sämtliche Keys abgelegt werden)
 * Die Windows Befehle stehen auch im Terminal zur Verfügung, z.B. `notepad README.md` 
  
-___
-
-![](images/Configfile_Logo_36x36.png "SSH") 05 - Zentrale SSH Konfigurationsfiles 
-======
-
-> [⇧ **Nach oben**](#inhaltsverzeichnis)
-
-Hier kommt noch Text rein
 
 
 ___
@@ -171,10 +162,14 @@ Datei %HOME%/.ssh/id_rsa.pub oder $HOME/.ssh/id_rsa.pub in Zwischenablage kopier
 > **Wikipedia:**    https://en.wikipedia.org/wiki/Ssh-agent
 
 
-![](../images/Git_36x36.png "Git Client")  02 - Git Client
+___
+
+![](images/Configfile_Logo_36x36.png "SSH") 05 - Zentrale SSH Konfigurationsfiles 
 ======
 
 > [⇧ **Nach oben**](#inhaltsverzeichnis)
+
+Hier kommt noch Text rein
 
 Damit die Arbeiten lokal auf dem eigenen PC erfolgen können, muss der sogenannte "Git Client", auf Windows "Git/Bash" installiert werden. Dieser ermöglicht uns,
 Cloud-Repositories zu klonen, zu pullen (herunterladen) oder ein lokales Repository zu pushen (hochladen).

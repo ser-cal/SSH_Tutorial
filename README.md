@@ -19,8 +19,11 @@ SSH richtig verstehen und praktisch anwenden
 * Einfache Linux-Kenntnisse (alles notwendige dazu weiter unten)
 * Internetanschluss *(allenfalls VPN-Zugang zu Cloud-Umgebung)*
 
+---
 
-#### Allgemeine Hinweise
+![](images/Gitbash_Logo_36x36.png "Gitbash") 
+
+### Allgemeine Hinweise
 
 Die meisten Arbeiten erfolgen auf der Kommandozeile; hier als **Terminal** (*Bash*) bezeichnet. In diesem Tutorial wird die Git-Bash auf einem Windows-System eingesetzt.
 

@@ -10,7 +10,7 @@ Diese **Skills** gehören, ähnlich wie z.B. **Netzwerkgrundlagen**, zum unverzi
 
 #### Lernziele
 
-Ein gutes Basiswissen in Bezug auf die Anwendung von SSH
+SSH verstehen und anwenden
 
 #### Voraussetzungen
 

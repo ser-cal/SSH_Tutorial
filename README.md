@@ -17,18 +17,20 @@ SSH richtig verstehen und praktisch anwenden
 * Host (PC/Notebook mit min. 8 GB freiem RAM)
 * Ausreichend Platz auf dem Host, um virtuelle Maschinen zu erstellen *(mind. 40GB freier HD- oder SSD-Speicher, falls kein Zugriff auf TBZ-Cloud, AWS-Cloud oder Azure-Cloud)*
 * Einfache Linux-Kenntnisse (alles notwendige dazu weiter unten)
-* Internetanschluss
+* Internetanschluss *(allenfalls VPN-Zugang zu Cloud-Umgebung)*
 
 
 #### Allgemeine Hinweise
 
-Die meisten Arbeiten erfolgen auf der Kommandozeile, hier als **Terminal** (*Bash*) bezeichnet.
+Die meisten Arbeiten erfolgen auf der Kommandozeile; hier als **Terminal** (*Bash*) bezeichnet. In diesem Tutorial wird die Git-Bash auf einem Windows-System eingesetzt.
 
 In der Kommandozeile bzw. im Terminal läuft die "Bash" Shell. Das ist nur die Shell von Linux und noch kein vollständiges Linux System. 
 
 Diese Umgebung wird verwendet, weil benötige Programme wie `git`, `ssh-keygen` in der Powershell nicht zur Verfügung stehen. 
 
-Um sich im Filesystem zurechtzufinden, sind folgende Befehle nützlich:
+#### Unix-Befehle
+
+Um sich im Filesystem zurechtzufinden, sind folgende Unix-Commands nützlich:
 * `cd /Verzeichnis` wechselt in Verzeichnis z.B. `cd /Users`, alternativ kann die Windows Schreibweise in " verwendet werden, z.B. `cd "C:\Users"`
 * Alternativ kann im Windows Explorer jederzeit ein Terminal mittels rechter Maustaste und `Git Bash Here` geöffnet werden.
 * `cd ~` Wechsel ins eigene Home-Verzeichnis. Dort werden SSH-Keys etc. abgelegt.

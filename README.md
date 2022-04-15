@@ -39,7 +39,7 @@ Diese Umgebung wird verwendet, weil benötige Programme wie `git`, `ssh-keygen` 
 
 * 01 - [Wichtige Linux-Kommandos](#-01---Wichtige-Linux-Kommandos)
 * 02 - [Zentrale Konfigurationsfiles](#--02---Zentrale-Konfigurationsfiles)
-* 02 - [SSH Keypair erstellen](#-02---SSH-Keypair-erstellen)
+* 03 - [SSH Keypair erstellen](#-03---SSH-Keypair-erstellen)
 * 02 - [Git Client](#--02---git-client)
 * 03 - [VirtualBox](#--03---virtualbox)
 * 04 - [Vagrant](#--04---vagrant)
@@ -67,10 +67,19 @@ Um sich im Filesystem zurechtzufinden, sind folgende Unix-Commands nützlich:
 * `ls -al` zeigt sämtliche Dateien im aktuellen Verzeichnis an (auch die versteckten, wie z.B. **.ssh**, wo sämtliche Keys abgelegt werden)
 * Die Windows Befehle stehen auch im Terminal zur Verfügung, z.B. `notepad README.md` 
  
+___
+
+![](../images/SSH_Logo_36x36.png "SSH") 02 - Zentrale Konfigurationsfiles 
+======
+
+> [⇧ **Nach oben**](#inhaltsverzeichnis)
+
+Hier kommt noch Text rein
+
 
 ___
 
-![](../images/SSH_Logo_36x36.png "SSH") 02 - SSH Keypair erstellen 
+![](../images/SSH_Logo_36x36.png "SSH") 03 - SSH Keypair erstellen 
 ======
 
 > [⇧ **Nach oben**](#inhaltsverzeichnis)

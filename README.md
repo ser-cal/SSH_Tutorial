@@ -34,7 +34,7 @@ Um sich im Filesystem zurechtzufinden, sind folgende Befehle nützlich:
 * `cd ~` Wechsel ins eigene Home-Verzeichnis. Dort werden SSH-Keys etc. abgelegt.
 * `cd -` wird auf das zuletzt verwendete Verzeichnis gewechselt.
 * Die Laufwerke von Windows stehen als `/c`, `/d/` zur Verfügung, Bsp. `cd /c/Users` und `cd "C:\Users"` sind indentisch
-* `ls -l` zeigt die Dateien im aktuellen Verzeichnis an CALTEST
+* `ls -l` zeigt die Dateien im aktuellen Verzeichnis an
 * `pwd` zeigt den aktuellen Pfad an.
 * Die Windows Befehle stehen auch im Terminal zur Verfügung, z.B. `notepad README.md` 
 

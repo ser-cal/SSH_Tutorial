@@ -108,10 +108,17 @@ ___
       $ eval "$(ssh-agent -s)"
       Agent pid 635
     ```
+    Beispiel:
+   ![Screenshot](images/SSH_Agent_starten_800.png)
+
 2.  SSH-Agenten mit der aktuellen Shell "verlinken" - ist nicht persistent :
     ```Shell
       $ ssh-add 
     ```
+
+    Beispiel:
+   ![Screenshot](images/SSH_Agent-2-Session_800.png)
+
     ...danach muss die korrekte "Passphrase" noch eingegeben werden
 
 

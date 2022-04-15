@@ -43,7 +43,7 @@ Diese Umgebung wird verwendet, weil benötige Programme wie `git`, `ssh-keygen` 
 * 02 - [Git Client](#--02---git-client)
 * 03 - [VirtualBox](#--03---virtualbox)
 * 04 - [Vagrant](#--04---vagrant)
-* 05 - [Visual Studio Code](#-05---visual-studio-code) / [Alternative Markdown Editoren](#alternative-editoren)
+* 05 - [Zentrale SSH Konfigurationsfiles](#-02---Zentrale-SSH-Konfigurationsfiles)
 * 06 - [Quellenverzeichnis](#-06---quellenverzeichnis)
 
 
@@ -69,7 +69,7 @@ Um sich im Filesystem zurechtzufinden, sind folgende Unix-Commands nützlich:
  
 ___
 
-![](images/Configfile_Logo_36x36.png "SSH") 02 - Zentrale SSH Konfigurationsfiles 
+![](images/Configfile_Logo_36x36.png "SSH") 05 - Zentrale SSH Konfigurationsfiles 
 ======
 
 > [⇧ **Nach oben**](#inhaltsverzeichnis)
@@ -94,15 +94,6 @@ Folgende Arbeiten müssen gemacht werden:
 2. E-Mail zur Verifizierung des Kontos bestätigen und anschliessend auf GitHub anmelden
 
 
-### Repository erstellen
-***
-1. Anmelden unter www.github.com 
-2. Innerhalb der Willkommens-Seite auf <strong>Start a project</strong> klicken
-3. Unter <strong>Repository name</strong> einen Name definieren (z.B. M300-Services)
-4. Optional: kurze Beschreibung eingeben
-5. Radio-Button bei <strong>Public</strong> belassen
-6. Haken bei <strong>Initialize this repository with a README</strong> setzen
-7. Auf <strong>Create repository</strong> klicken
    
 ### SSH-Key erstellen (lokal)
 ***

@@ -53,7 +53,7 @@ Um sich im Filesystem zurechtzufinden, sind folgende Unix-Commands nützlich:
 
 ___
 
-![](../images/GitHub_36x36.png "SSH") 01 - Wichtige Linux-Kommandos 
+![](images/Dollarprompt_Logo_36x36.png "SSH") 01 - Wichtige Linux-Kommandos 
 ======
 
 > [⇧ **Nach oben**](#inhaltsverzeichnis)

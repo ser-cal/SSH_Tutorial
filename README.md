@@ -1,6 +1,5 @@
 [10]: https://git-scm.com/downloads
-[20]: https://kubernetes.io/de/docs/tasks/tools/install-kubectl/
-[30]: https://rancher.com/learning-paths/how-to-manage-kubernetes-with-kubectl/
+
 
 
 SSH verstehen und anwenden
@@ -13,11 +12,11 @@ Der erste dafür eingesetzte Dienst war **Telnet**. Dieser Dienst ist jedoch nic
 Dieses Tutorial soll helfen, **SSH** zu verstehen und praktisch anzuwenden. Es wird empfohlen, auch die Praxisbeispiele durchzuarbeiten, um das Wissen zu festigen. 
 Diese **Skills** gehören, ähnlich wie z.B. **Netzwerkgrundlagen**, zum unverzichtbaren **Basiswissen** eines Informatikers.
 
-#### Lernziele
+### Lernziel
 
 **SSH** richtig verstehen und praktisch anwenden
 
-#### Voraussetzungen
+### Voraussetzungen
 
 * Host (PC/Notebook mit min. 8 GB freiem RAM)
 * Ausreichend Platz auf dem Host, um virtuelle Maschinen zu erstellen *(mind. 40GB freier HD- oder SSD-Speicher, falls kein Zugriff auf TBZ-Cloud, AWS-Cloud oder Azure-Cloud)*
@@ -25,7 +24,7 @@ Diese **Skills** gehören, ähnlich wie z.B. **Netzwerkgrundlagen**, zum unverzi
 * Internetanschluss *(allenfalls VPN-Zugang zu Cloud-Umgebung)*
 
 
-#### Terminal (Kommandozeile) 
+### Terminal (Kommandozeile) 
 
 ![](images/Gitbash_Logo_36x36.png "Gitbash") 
 

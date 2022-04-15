@@ -51,7 +51,7 @@ Um sich im Filesystem zurechtzufinden, sind folgende Unix-Commands nützlich:
 
 ___
 
-![](../images/SSH_Logo_36x36.png "SSH") 01 - SSH-Keypair erstellen 
+![](../images/SSH_Logo_36x36.png "SSH") 01 - SSH Keypair erstellen 
 
 ======
 

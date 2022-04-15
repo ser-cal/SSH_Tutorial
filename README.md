@@ -92,7 +92,7 @@ ___
     ```Shell
       Enter a file in which to save the key (~/.ssh/id_rsa): [Press enter]
     ```
-5. Nun kann ein Passwort für den Key festgelegt werden. Ich empfehle dieses zu setzen und anschliessend dem SSH-Agent zu hinterlegen, sodass keine erneute Eingabe (z.B. beim Pushen) notwendig ist:
+5. Nun kann ein Passwort für den Key festgelegt werden. Es wird empfohlen dieses zu setzen und anschliessend dem SSH-Agent zu hinterlegen, sodass keine erneute Eingabe (z.B. beim Pushen) notwendig ist:
     ```Shell
       Enter passphrase (empty for no passphrase): [Passwort]
       Enter same passphrase again: [Passwort wiederholen]
@@ -103,7 +103,17 @@ ___
 
 **Windows und Linux**
 
-Datei %HOME%/.ssh/id_rsa.pub oder $HOME/.ssh/id_rsa.pub in Zwischenablage kopieren.
+1.  SSH-Agenten starten:
+    ```Shell
+      $ eval "$(ssh-agent -s)"
+      Agent pid 635
+    ```
+2.  SSH-Agenten mit der aktuellen Shell "verlinken" - ist nicht persistent :
+    ```Shell
+      $ ssh-add 
+    ```
+    ...danach muss die korrekte "Passphrase" noch eingegeben werden
+
 
 **macOS**
 

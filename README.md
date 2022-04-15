@@ -3,7 +3,7 @@ SSH verstehen und anwenden
 
 Computer kommunizieren über Netzwerke miteinander. Daher wurde in der Vergangenheit eine Reihe von Regeln für die Kommunikation zwischen ICT-Systemen eingeführt und stetig weiterentwickelt.
 
-Der erste dafür eingesetzte Dienst war **Telnet**. Dieser Dienst ist jedoch nicht sicher. Telnet übermittelt Daten im **Klartext**. Das heisst; die übertragenen Daten können, falls abgefangen, ohne weiteren Aufwand gelesen werden. Um genau dieses Problem zu lösen, wurde Mitte der 90er Jahre ein **sichereres** Protokoll namens **SSH** entwickelt und als zuverlässiger Nachfolger des Telnet-Protokolls eingeführt. Daten die mit **SSH** übermittelt werden, sind verschlüsselt (encryptede) und können nicht ohne entsprechenden **Schlüssel** gelesen (decrypted) werden. 
+Der erste dafür eingesetzte Dienst war **Telnet**. Dieser Dienst ist jedoch nicht sicher. Telnet übermittelt Daten im **Klartext**. Das heisst; die übertragenen Daten können, falls abgefangen, ohne weiteren Aufwand gelesen werden. Um genau dieses Problem zu lösen, wurde Mitte der 90er Jahre ein **sichereres** Protokoll namens **SSH** entwickelt und als zuverlässiger Nachfolger des Telnet-Protokolls eingeführt. Daten die mit **SSH** übermittelt werden, sind verschlüsselt (encrypted) und können nicht ohne entsprechenden **Schlüssel** gelesen (decrypted) werden. 
 
 Dieses Tutorial soll helfen, **SSH** zu verstehen und praktisch anzuwenden. Es wird empfohlen, auch die Praxisbeispiele durchzuarbeiten, um das Wissen zu festigen. 
 Diese **Skills** gehören, ähnlich wie z.B. **Netzwerkgrundlagen**, zum unverzichtbaren **Basiswissen** eines Informatikers.
@@ -40,7 +40,7 @@ Um sich im Filesystem zurechtzufinden, sind folgende Befehle nützlich:
 
 #### Inhaltsverzeichnis
 
-* 01 - [SSH-Keypair erstellen](#--01---SSH-Keypair erstellen)
+* 01 - [SSH-Keypair erstellen](#-01-SSH-Keypair-erstellen)
 * 02 - [Git Client](#--02---git-client)
 * 03 - [VirtualBox](#--03---virtualbox)
 * 04 - [Vagrant](#--04---vagrant)
@@ -50,6 +50,7 @@ Um sich im Filesystem zurechtzufinden, sind folgende Befehle nützlich:
 ___
 
 ![](../images/SSH_Logo_36x36.png "SSH") 01 - SSH-Keypair erstellen 
+
 ======
 
 > [⇧ **Nach oben**](#inhaltsverzeichnis)

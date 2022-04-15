@@ -42,16 +42,27 @@ Um sich im Filesystem zurechtzufinden, sind folgende Unix-Commands nützlich:
 
 #### Inhaltsverzeichnis
 
-* 01 - [SSH Keypair erstellen](#-01---SSH-Keypair-erstellen)
+* 01 - [Wichtige Linux-Kommandos](#-01---Wichtige-Linux-Kommandos)
+* 02 - [SSH Keypair erstellen](#-02---SSH-Keypair-erstellen)
 * 02 - [Git Client](#--02---git-client)
 * 03 - [VirtualBox](#--03---virtualbox)
 * 04 - [Vagrant](#--04---vagrant)
 * 05 - [Visual Studio Code](#-05---visual-studio-code) / [Alternative Markdown Editoren](#alternative-editoren)
 * 06 - [Quellenverzeichnis](#-06---quellenverzeichnis)
 
+
 ___
 
-![](../images/SSH_Logo_36x36.png "SSH") 01 - SSH Keypair erstellen 
+![](../images/GitHub_36x36.png "SSH") 01 - Wichtige Linux-Kommandos 
+======
+
+> [⇧ **Nach oben**](#inhaltsverzeichnis)
+
+Als erster Schritt muss ein GitHub-Account 
+
+___
+
+![](../images/SSH_Logo_36x36.png "SSH") 02 - SSH Keypair erstellen 
 ======
 
 > [⇧ **Nach oben**](#inhaltsverzeichnis)

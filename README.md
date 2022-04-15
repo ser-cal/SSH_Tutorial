@@ -15,7 +15,7 @@ SSH richtig verstehen und praktisch anwenden
 #### Voraussetzungen
 
 * Host (PC/Notebook mit min. 8 GB freiem RAM)
-* Ausreichend Platz auf dem Host, um virtuelle Maschinen zu erstellen und damit zu arbeiten (mind. 40GB freier HD- oder SSD-Speicher)
+* Ausreichend Platz auf dem Host, um virtuelle Maschinen zu erstellen *(mind. 40GB freier HD- oder SSD-Speicher, falls kein Zugriff auf TBZ-Cloud, AWS-Cloud oder Azure-Cloud)*
 * Einfache Linux-Kenntnisse (alles notwendige dazu weiter unten)
 * Internetanschluss
 

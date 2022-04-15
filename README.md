@@ -15,7 +15,7 @@ Diese **Skills** gehören, ähnlich wie z.B. **Netzwerkgrundlagen**, zum unverzi
 
 #### Lernziele
 
-SSH richtig verstehen und praktisch anwenden
+**SSH** richtig verstehen und praktisch anwenden
 
 #### Voraussetzungen
 
@@ -65,7 +65,17 @@ ___
 
 > [⇧ **Nach oben**](#inhaltsverzeichnis)
 
-Als erster Schritt muss ein GitHub-Account 
+#### Unix-Befehle
+
+Um sich im Filesystem zurechtzufinden, sind folgende Unix-Commands nützlich:
+* `cd /Verzeichnis` wechselt in Verzeichnis z.B. `cd /Users`, alternativ kann die Windows Schreibweise in " verwendet werden, z.B. `cd "C:\Users"`
+* Alternativ kann im Windows Explorer jederzeit ein Terminal mittels rechter Maustaste und `Git Bash Here` geöffnet werden.
+* `cd ~` Wechsel ins eigene Home-Verzeichnis. Dort werden SSH-Keys etc. abgelegt.
+* `cd -` wird auf das zuletzt verwendete Verzeichnis gewechselt.
+* Die Laufwerke von Windows stehen als `/c`, `/d/` zur Verfügung, Bsp. `cd /c/Users` und `cd "C:\Users"` sind indentisch
+* `ls -l` zeigt die Dateien im aktuellen Verzeichnis an
+* `pwd` zeigt den aktuellen Pfad an.
+* Die Windows Befehle stehen auch im Terminal zur Verfügung, z.B. `notepad README.md`  
 
 ___
 

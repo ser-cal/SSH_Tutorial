@@ -14,9 +14,11 @@ SSH richtig verstehen und praktisch anwenden
 
 #### Voraussetzungen
 
-* PC/Notebook mit min. 8 GB freiem RAM, ca. 20 GB freiem HD-Speicher und einer Ethernet-Netzwerkkarte.
-* **Einfache** Linux-Kenntnisse sind von Vorteil, aber nicht zwingend notwendig
-* Ein schnelles Netzwerk- (Kabel!) und Internet-Anschluss
+* Host (PC/Notebook mit min. 8 GB freiem RAM)
+* Ausreichend Platz auf dem Host, um virtuelle Maschinen zu erstellen und damit zu arbeiten (mind. 40GB freier HD- oder SSD-Speicher)
+* Einfache Linux-Kenntnisse (alles notwendige dazu weiter unten)
+* Internetanschluss
+
 
 #### Allgemeine Hinweise
 

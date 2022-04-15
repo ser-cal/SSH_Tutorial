@@ -21,9 +21,9 @@ SSH richtig verstehen und praktisch anwenden
 
 ---
 
-![](images/Gitbash_Logo_36x36.png "Gitbash") 
+### Allgemeine Hinweise 
 
-### Allgemeine Hinweise
+![](images/Gitbash_Logo_36x36.png "Gitbash") 
 
 Die meisten Arbeiten erfolgen auf der Kommandozeile; hier als **Terminal** (*Bash*) bezeichnet. In diesem Tutorial wird die Git-Bash auf einem Windows-System eingesetzt.
 

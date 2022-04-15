@@ -1,3 +1,8 @@
+[10]: https://git-scm.com/downloads
+[20]: https://kubernetes.io/de/docs/tasks/tools/install-kubectl/
+[30]: https://rancher.com/learning-paths/how-to-manage-kubernetes-with-kubectl/
+
+
 SSH verstehen und anwenden
 ===================
 
@@ -19,13 +24,12 @@ SSH richtig verstehen und praktisch anwenden
 * Einfache Linux-Kenntnisse (alles notwendige dazu weiter unten)
 * Internetanschluss *(allenfalls VPN-Zugang zu Cloud-Umgebung)*
 
----
 
-### Allgemeine Hinweise 
+### Terminal (Kommandozeile) 
 
 ![](images/Gitbash_Logo_36x36.png "Gitbash") 
 
-Die meisten Arbeiten erfolgen auf der Kommandozeile; hier als **Terminal** (*Bash*) bezeichnet. In diesem Tutorial wird die Git-Bash auf einem Windows-System eingesetzt.
+Die meisten Arbeiten erfolgen auf der Kommandozeile; hier als **Terminal** (*Bash*) bezeichnet. In diesem Tutorial wird die Git-Bash ([Download-URL][10]) auf einem Windows-System eingesetzt.
 
 In der Kommandozeile bzw. im Terminal läuft die "Bash" Shell. Das ist nur die Shell von Linux und noch kein vollständiges Linux System. 
 

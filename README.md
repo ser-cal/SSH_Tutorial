@@ -42,7 +42,7 @@ Um sich im Filesystem zurechtzufinden, sind folgende Unix-Commands nützlich:
 
 #### Inhaltsverzeichnis
 
-* 01 - [SSH-Keypair erstellen](#-01--SSH-Keypair-erstellen)
+* 01 - [SSH-Keypair erstellen](#--01--SSH-Keypair-erstellen)
 * 02 - [Git Client](#--02---git-client)
 * 03 - [VirtualBox](#--03---virtualbox)
 * 04 - [Vagrant](#--04---vagrant)

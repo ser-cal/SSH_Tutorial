@@ -69,7 +69,7 @@ Um sich im Filesystem zurechtzufinden, sind folgende Unix-Commands nützlich:
  
 ___
 
-![](../images/SSH_Logo_36x36.png "SSH") 02 - Zentrale Konfigurationsfiles 
+![](images/Configfile_Logo_36x36.png "SSH") 02 - Zentrale Konfigurationsfiles 
 ======
 
 > [⇧ **Nach oben**](#inhaltsverzeichnis)
@@ -79,7 +79,7 @@ Hier kommt noch Text rein
 
 ___
 
-![](../images/SSH_Logo_36x36.png "SSH") 03 - SSH Keypair erstellen 
+![](images/SSH_Logo_36x36.png "SSH") 03 - SSH Keypair erstellen 
 ======
 
 > [⇧ **Nach oben**](#inhaltsverzeichnis)

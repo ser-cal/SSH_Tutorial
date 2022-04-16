@@ -102,10 +102,8 @@ Der **Public-Key** (Endung .pub) kann  weitergegeben werden und ist somit auch f
       Enter same passphrase again: [Passwort wiederholen]
     ```
 
----
-
+--- 
 ### SSH-Key dem SSH-Agent hinzufügen 
-***
 
 Um das Abgleichen der Inhalte zwischen dem Origin und dem Main/Master-Repository zu beschleunigen, empfiehlt es sich, den SSH-Key dem SSH-Agent hinzuzufügen.
 **Vorteil:** Man muss man sich nur einmal authentifizieren und kann anschliessend Projektänderungen **ohne** Passwort oder Passphrase-Eingabe "pushen" oder "pullen".  

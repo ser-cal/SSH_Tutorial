@@ -76,7 +76,8 @@ ___
 > [⇧ **Nach oben**](#inhaltsverzeichnis)
 
 
-### SSH Keypair erstellen (z.B. auf Laptop)
+### SSH Keypair erstellen
+(z.B. auf persönlichem Laptop)
 
 Als erstes muss ein SSH-Keypair (Private/Public-Key) erstellt werden. 
 Der **Private-Key** wird persönlich verwaltet und sollte **niemals** weitergegeben werden.

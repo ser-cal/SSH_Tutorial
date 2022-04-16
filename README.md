@@ -77,7 +77,6 @@ ___
 
 
 ### SSH-Keys lokal erstellen (z.B. auf Laptop)
-***
 
 1.  Terminal (*Bash*) öffnen
 2.  Folgenden Befehl mit der Account-E-Mail von GitHub einfügen:
@@ -97,6 +96,8 @@ ___
       Enter passphrase (empty for no passphrase): [Passwort]
       Enter same passphrase again: [Passwort wiederholen]
     ```
+
+---
 
 ### SSH-Key dem SSH-Agent hinzufügen 
 ***

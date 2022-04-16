@@ -145,7 +145,7 @@ Im folgenden Abschnitt werden zwei Varianten erklärt. Bei der ersten Variante m
       $ vi .bash_profile
     ```
     Beispiel:
-   ![Screenshot](images/SSH_Agent_starten_800.png)
+   ![Screenshot](images/bash_profile_800.png)
 
 2.  .bash_profile anpassen:
     ```Shell

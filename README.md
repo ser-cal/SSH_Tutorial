@@ -109,7 +109,7 @@ Um das Abgleichen der Inhalte zwischen dem Origin und dem Main/Master-Repository
 **Vorteil:** Man muss man sich nur einmal authentifizieren und kann anschliessend Projektänderungen **ohne** Passwort oder Passphrase-Eingabe "pushen" oder "pullen".  
 
 **Windows und Linux**
-Im folgenden Abschnitt werden zwei Varianten erklärt. 
+Im folgenden Abschnitt werden zwei Varianten erklärt. Bei der ersten Variante muss der Ablauf bei jedem neuen Login durchgeführt werden (Non-Persistent). Bei der zweiten Variante wird ein Script in das .bash-profile eingefügt, welches beim Login des Benutzers automatisch ausgeführt wird (Persistent)
 
 **Variante 1:** Non-Persistent (muss bei jedem Login neu ausgeführt werden)
 

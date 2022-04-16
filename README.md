@@ -70,15 +70,20 @@ Um sich im Filesystem zurechtzufinden, sind folgende Unix-Commands nützlich:
 
 ___
 
-![](images/SSH_Logo_36x36.png "SSH") 02 - SSH Keypair erstellen 
+![](images/SSH_Logo_36x36.png "SSH") 02 - SSH-Keys und SSH-Agent 
 ======
 
 > [⇧ **Nach oben**](#inhaltsverzeichnis)
 
 
-### SSH-Keys lokal erstellen (z.B. auf Laptop)
+### SSH Keypair erstellen (z.B. auf Laptop)
+
+Als erstes muss ein SSH-Keypair (Private/Public-Key) erstellt werden. 
+Der **Private-Key** wird persönlich verwaltet und sollte **niemals** weitergegeben werden.
+Der **Public-Key** (Endung .pub) kann  weitergegeben werden und ist somit auch für alle einsehbar. 
 
 1.  Terminal (*Bash*) öffnen
+
 2.  Folgenden Befehl mit der Account-E-Mail von GitHub einfügen:
     ```Shell
       $  ssh-keygen -t rsa -b 4096 -C "livio.brugger@edu.tbz.ch"

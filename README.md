@@ -101,7 +101,11 @@ ___
 ### SSH-Key dem SSH-Agent hinzufügen 
 ***
 
+Um das Abgleichen der Inhalte zwischen dem Origin und dem Main/Master-Repository zu beschleunigen, empfiehlt es sich, den SSH-Key dem SSH-Agent hinzuzufügen.
+**Vorteil:** Man muss man sich nur einmal authentifizieren und kann anschliessend Projektänderungen **ohne** Passwort oder Passphrase-Eingabe "pushen" oder "pullen".  
+
 **Windows und Linux**
+Im folgenden Abschnitt werden zwei Varianten erklärt. 
 
 **Variante 1:** Non-Persistent (muss bei jedem Login neu ausgeführt werden)
 
@@ -130,6 +134,9 @@ ___
 
 
 
+
+
+---
 
 **macOS**
 

@@ -111,7 +111,7 @@ ___
     Beispiel:
    ![Screenshot](images/SSH_Agent_starten_800.png)
 
-2.  SSH-Agenten mit der aktuellen Shell "verlinken" - Achtung: dieses Vorgehen ist nicht persistent. Das heisst, dass diese Prozedur beim nächsten Login erneut durchgeführt werden muss):
+2.  SSH-Agenten mit der aktuellen Shell "verlinken" - Achtung: dieses Vorgehen ist nicht persistent. Das heisst, dass diese Prozedur beim nächsten Login erneut durchgeführt werden muss:
     ```Shell
       $ ssh-add 
     ```

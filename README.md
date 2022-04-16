@@ -133,6 +133,7 @@ Im folgenden Abschnitt werden zwei Varianten erklärt. Bei der ersten Variante m
 
     Achtung: dieses Vorgehen ist nicht persistent. Das heisst, dass diese Prozedur beim nächsten Login erneut durchgeführt werden muss:
 
+<br>
 
 **Variante 2:** Persistent (SSH-Agent startet nach dem Starten des Laptops automatisch. Passphrase muss nur einmal (zu Beginn) eingegeben werden. 
 

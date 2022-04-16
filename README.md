@@ -138,7 +138,16 @@ Im folgenden Abschnitt werden zwei Varianten erklärt. Bei der ersten Variante m
 
 **Variante 2:** Persistent (SSH-Agent startet nach dem Starten des Laptops automatisch. Passphrase muss nur einmal (zu Beginn) eingegeben werden. 
 
-1.  .bash_profile anpassen:
+1.  Bash_Profile sichern, bevor es geändert wird und anschliessend mit Editor öffnen:
+    ```Shell
+      $ cd ~
+      $ cp .bash_profile .bash_profile.ORIG
+      $ vi .bash_profile
+    ```
+    Beispiel:
+   ![Screenshot](images/SSH_Agent_starten_800.png)
+
+2.  .bash_profile anpassen:
     ```Shell
       env=~/.ssh/agent.env
       agent_load_env () { test -f "$env" && . "$env" >| /dev/null ; }

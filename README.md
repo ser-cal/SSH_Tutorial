@@ -116,7 +116,7 @@ ___
       $ ssh-add 
     ```
 
-    Beispiel TEST:
+    Beispiel:
    ![Screenshot](images/SSH_Agent-2-Session_800.png)
 
     ...danach muss die korrekte "Passphrase" noch eingegeben werden

@@ -103,6 +103,8 @@ ___
 
 **Windows und Linux**
 
+**Variante 1:** Non-Persistent (muss bei jedem Login neu ausgeführt werden)
+
 1.  SSH-Agenten starten:
     ```Shell
       $ eval "$(ssh-agent -s)"
@@ -111,15 +113,22 @@ ___
     Beispiel:
    ![Screenshot](images/SSH_Agent_starten_800.png)
 
-2.  SSH-Agenten mit der aktuellen Shell "verlinken" - Achtung: dieses Vorgehen ist nicht persistent. Das heisst, dass diese Prozedur beim nächsten Login erneut durchgeführt werden muss:
+2.  SSH-Agenten mit der aktuellen Shell "verlinken":
     ```Shell
       $ ssh-add 
     ```
 
-    Beispiel TEST:
+    Beispiel:
    ![Screenshot](images/SSH_Agent-2-Session_800.png)
 
-    ...danach muss die korrekte "Passphrase" noch eingegeben werden
+    ...danach muss die korrekte "Passphrase" noch eingegeben werden (falls gesetzt)
+
+    Achtung: dieses Vorgehen ist nicht persistent. Das heisst, dass diese Prozedur beim nächsten Login erneut durchgeführt werden muss:
+
+
+**Variante 2:** Persistent (SSH-Agent startet nach dem Starten des Laptops automatisch. Passphrase muss nur einmal (zu Beginn) eingegeben werden. 
+
+
 
 
 **macOS**

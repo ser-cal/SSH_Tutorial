@@ -223,7 +223,7 @@ ___
 
 > [⇧ **Nach oben**](#inhaltsverzeichnis)
 
-Es gibt verschiedene Konfigurationsfiles, die im Zusammenhang mit **SSH** eine Rolle spielen. 
+Es gibt verschiedene **Konfigurationsfiles**, die im Zusammenhang mit **SSH** eine Rolle spielen. 
 
 ### Session Types 
 
@@ -270,14 +270,14 @@ Eintrag in der letzten Zeile
   ALL: ALL EXCEPT 10.3.37.41
 ```
 
-**1. Beweis:** (Reset/Abbruch) <br>
+**Versuch 1**: in diesem Fall funktioniert es **nicht** (Reset/Abbruch) <br>
 Zugriff von **10.3.37.40** auf den Zielrechner **10.3.37.42**. Dieser Rechner hat **keine Exception** und darf somit **nicht zugreifen**:
 
    ![Screenshot](images/10_SSH_800.png)
 
 Es erscheint die Meldung "Connection reset by peer". Der Verbindungsaufbau wurde somit abgebrochen; ich bleibe auf meinem Host.
 
-**2. Beweis:** (Success) <br>
+**Versuch 2**: in diesem Fall funktioniert es (Success) <br>
 Zugriff von **10.3.37.41** auf den Zielrechner **10.3.37.42**. Dieser Rechner hat **eine Exception** und darf somit **zugreifen**:
 
    ![Screenshot](images/11_SSH_800.png)

@@ -174,6 +174,9 @@ Im folgenden Abschnitt werden zwei Varianten erklärt. Bei der ersten Variante m
    ![Screenshot](images/bash_profile_inhalt_800.png)
 
 
+Wenn alles korrekt konfiguriert worden ist, und der zugehörige Public-Key auf den zu verwaltenden Servern abgelegt ist, kann ich nun von meinem Host aus per **SSH** auf alle diese Systeme zugreifen, **ohne** ein Passwort oder eine Passphrase einzugeben.
+
+Wenn ich ja jetzt für den Verbindungsaufbau weder ein Passwort noch eine Passphrase benötige, stellt sich nun die Frage, ob dies ein Security-Issue darstellt. Die Antwort ist; "**Nein**". Weshalb?
 
 ---
 

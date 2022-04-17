@@ -147,7 +147,7 @@ Im folgenden Abschnitt werden zwei Varianten erklärt. Bei der ersten Variante m
     Beispiel:
    ![Screenshot](images/bash_profile_800.png)
 
-2.  .bash_profile anpassen:
+2.  Folgenden Code ins .bash_profile einfügen:
     ```Shell
       env=~/.ssh/agent.env
       agent_load_env () { test -f "$env" && . "$env" >| /dev/null ; }

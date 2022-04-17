@@ -271,6 +271,14 @@ Eintrag in der letzten Zeile
 **Versuch 1**: in diesem Fall funktioniert es **nicht** (Reset/Abbruch) <br>
 Zugriff von **10.3.37.40** auf den Zielrechner **10.3.37.42**. Dieser Rechner hat **keine Exception** und darf somit **nicht zugreifen**:
 
+Befehle:
+```Shell
+  $ hostname #Wir befinden uns auf 
+  $ ip address show wg0 #wg0 IP 10.3.37.40
+  $ ssh mclaren@10.3.37.42 #Zugriff auf 10.3.37.42
+```
+
+Screenshot
    ![Screenshot](images/10_SSH_800.png)
 
 Es erscheint die Meldung "Connection reset by peer". Der Verbindungsaufbau wurde somit abgebrochen; ich bleibe auf meinem Host.

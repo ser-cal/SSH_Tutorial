@@ -213,22 +213,54 @@ ___
 
 > [⇧ **Nach oben**](#inhaltsverzeichnis)
 
-SSH arbeitet mit einem von drei unterschiedlichen **Session Types**. Jeder **Session Type** nutzt dasselbe Protokoll und denselben Port; auf der Serverseite gibt es allerdings für jeden davon ein **eigenes** Config-File.
+Es gibt verschiedene Konfigurationsfiles, die im Zusammenhang mit **SSH** eine Rolle spielen. 
 
 ### Session Types 
 
 1. RSA rhost authentication
-    - /etc/hosts.equiv
-    - /etc/ssh/shosts.equiv
+    - /etc/hosts.allow
+    - /etc/hosts.deny
     - /home/username/.rhosts
     - /home/username/.shosts
+
+  Hier können entweder **pro System** oder **pro Benutzer** Einschränkungen konfiguriert werden. 
+
+  Im folgenden Beispiel werden auf dem System **10.3.37.42** im **/etc/hosts.deny** sämtliche Zugriffe von "entfernten" Systemen unterbunden - mit einer Ausnahme: Das System mit der IP-Adresse **10.3.37.41**, welches mit einem "EXCEPT"-Eintrag von dieser Regel ausgeschlossen wird. Dieselbe Bedingung könnte auch erfüllt werden, wenn stattdessen ein entsprechender Eintrag im **/etc/hosts.allow** gemacht würde.
+
+**Host: 10.3.37.42**
+
+Konfigurationsfile mit Editor öffnen
+```Shell
+  $ sudo vi /etc/hosts.deny
+```
+
+Eintrag in der letzten Zeile
+```Shell
+  # /etc/hosts.deny: list of hosts that are _not_ allowed to access the system.
+  #                  See the manual pages hosts_access(5) and hosts_options(5).
+  #
+  # Example:    ALL: some.host.name, .some.domain
+  #             ALL EXCEPT in.fingerd: other.host.name, .other.domain
+  #
+  # If you're going to protect the portmapper use the name "rpcbind" for the
+  # daemon name. See rpcbind(8) and rpc.mountd(8) for further information.
+  #
+  # The PARANOID wildcard matches any host whose name does not match its
+  # address.
+  #
+  # You may wish to enable this to ensure any programs that don't
+  # validate looked up hostnames still leave understandable logs. In past
+  # versions of Debian this has been the default.
+  # ALL: PARANOID
+  ALL: ALL EXCEPT 10.3.37.41
+```
+
 
 2. Private/Public Keypair authentication <br>
 
 3. Password authentication
 
 
-Hierzu müssen folgende Schritte durchgeführt werden: 
 
 ### Client installieren
 ***

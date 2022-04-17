@@ -1,5 +1,5 @@
 [10]: https://git-scm.com/downloads
-
+[20]: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases#auto-launching-ssh-agent-on-git-for-windows
 
 
 SSH verstehen und anwenden
@@ -136,7 +136,7 @@ Im folgenden Abschnitt werden zwei Varianten erklärt. Bei der ersten Variante m
 
 <br>
 
-**Variante 2:** Persistent - SSH-Agent startet nach dem Login automatisch (Code liegt im .bash_profile, welches bei jedem Login gleich zu Beginn ausgeführt wird). Passphrase muss nur einmal (am Anfang) eingegeben werden. 
+**Variante 2:** Persistent - SSH-Agent startet nach dem Login automatisch (Code liegt im .bash_profile, welches bei jedem Login gleich zu Beginn ausgeführt wird). Passphrase muss nur einmal (am Anfang) eingegeben werden -  [Quelle][20]
 
 1.  Bash_Profile sichern, bevor es geändert wird und anschliessend mit Editor öffnen:
     ```Shell

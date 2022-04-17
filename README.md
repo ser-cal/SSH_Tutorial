@@ -173,10 +173,17 @@ Im folgenden Abschnitt werden zwei Varianten erklärt. Bei der ersten Variante m
     Beispiel:
    ![Screenshot](images/bash_profile_inhalt_800.png)
 
+**Check:**
 
-Wenn alles korrekt konfiguriert worden ist, und der zugehörige Public-Key auf den zu verwaltenden Servern abgelegt ist, kann ich nun von meinem Host aus per **SSH** auf alle diese Systeme zugreifen, **ohne** ein Passwort oder eine Passphrase einzugeben.
+Wenn alles korrekt konfiguriert worden ist, und der zugehörige Public-Key auf die zu verwaltenden Server verteilt wurde, kann ich nun von meinem Host aus per **SSH** auf alle diese Systeme zugreifen, **ohne** ein Passwort und **ohne** eine Passphrase einzugeben.
 
-Wenn ich ja jetzt für den Verbindungsaufbau weder ein Passwort noch eine Passphrase benötige, stellt sich nun die Frage, ob dies ein Security-Issue darstellt. Die Antwort ist; "**Nein**". Weshalb?
+Wenn ich ja jetzt für den Verbindungsaufbau weder ein Passwort noch eine Passphrase benötige, stellt sich die Frage, ob dies ein Security-Issue darstellt. Die Antwort ist "**Nein**". Aber können Sie begründen, weshalb nicht? 
+
+Nun: Falls jemand in den Besitz unseres **Private-Keys** kommt, muss er oder sie zusätzlich noch die Passphrase kennen. Wir erinnern uns: Immer zu Beginn einer Session, also bei der Eingabe des ersten SSH-Befehls, muss die Passphrase eingegeben werden. In unserem Fall ist das System so konfiguriert, dass der SSH-Agent im **.bash_profile** automatisch gestartet wird. In der gleichen Codeabfolge wird ihm der Private-Key angehängt. 
+
+Dieses Verfahren ist also sicher und hilft uns, effizient Code mit einem Repository abzugleichen (push/pull), oder unkompliziert auf andere Systeme zuzugreifen.
+
+
 
 ---
 

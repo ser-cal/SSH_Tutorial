@@ -214,10 +214,20 @@ ___
 
 > [⇧ **Nach oben**](#inhaltsverzeichnis)
 
-Hier kommt noch Text rein
+SSH arbeitet mit einer von drei unterschiedlichen **Session Types**. Jeder **Session Type** nutzt dasselbe Protokoll und denselben Port; auf der Serverseite gibt es allerdings für jeden ein separates Config-File.
 
-Damit die Arbeiten lokal auf dem eigenen PC erfolgen können, muss der sogenannte "Git Client", auf Windows "Git/Bash" installiert werden. Dieser ermöglicht uns,
-Cloud-Repositories zu klonen, zu pullen (herunterladen) oder ein lokales Repository zu pushen (hochladen).
+### Session Types 
+
+1. RSA rhost authentication
+    - /etc/hosts.equiv
+    - /etc/ssh/shosts.equiv
+    - /home/username/.rhosts
+    - /home/username/.shosts
+
+2. Private/Public Keypair authentication <br>
+
+3. Password authentication
+
 
 Hierzu müssen folgende Schritte durchgeführt werden: 
 

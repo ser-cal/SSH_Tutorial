@@ -225,7 +225,7 @@ Es gibt verschiedene Konfigurationsfiles, die im Zusammenhang mit **SSH** eine R
 
   Hier können entweder **pro System** oder **pro Benutzer** Einschränkungen konfiguriert werden. 
 
-  Im folgenden Beispiel werden auf dem System **10.3.37.42** im **/etc/hosts.deny** sämtliche Zugriffe von "entfernten" Systemen unterbunden - mit einer Ausnahme: Das System mit der IP-Adresse **10.3.37.41**, welches mit einem "EXCEPT"-Eintrag von dieser Regel ausgeschlossen wird. Dieselbe Bedingung könnte auch erfüllt werden, wenn stattdessen ein entsprechender Eintrag im **/etc/hosts.allow** gemacht würde.
+  Im folgenden Beispiel werden auf dem System **10.3.37.42** (Bild unten, gelbes Feld links) im **/etc/hosts.deny** sämtliche Zugriffe von "entfernten" Systemen unterbunden - mit einer Ausnahme: Das System mit der IP-Adresse **10.3.37.41**, welches mit einem "EXCEPT"-Eintrag von dieser Regel ausgeschlossen wird. Dieselbe Bedingung könnte auch erfüllt werden, wenn stattdessen ein entsprechender Eintrag im **/etc/hosts.allow** gemacht würde.
 
 **Illustration:**
 

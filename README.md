@@ -39,10 +39,10 @@ Diese Umgebung wird verwendet, weil benötige Programme wie `git`, `ssh-keygen` 
 
 * 01 - [Wichtige Linux-Kommandos](#-01---Wichtige-Linux-Kommandos)
 * 02 - [SSH Keypair erstellen](#-02---SSH-Keypair-erstellen)
-* 02 - [Git Client](#--02---git-client)
+* 03 - [Zentrale SSH Konfigurationsfiles](#-03---Zentrale-SSH-Konfigurationsfiles)
 * 03 - [VirtualBox](#--03---virtualbox)
 * 04 - [Vagrant](#--04---vagrant)
-* 05 - [Zentrale SSH Konfigurationsfiles](#-02---Zentrale-SSH-Konfigurationsfiles)
+* 03 - [Zentrale SSH Konfigurationsfiles](#-03---Zentrale-SSH-Konfigurationsfiles)
 * 06 - [Quellenverzeichnis](#-06---quellenverzeichnis)
 
 
@@ -205,27 +205,11 @@ Im folgenden Abschnitt werden zwei Varianten erklärt. Bei der ersten Variante m
       # Kopiert den Angezeiten Inhalt der id_rsa.pub Datei in die Zwischenablage
     ``` 
 
-### SSH-Key hinzufügen
-***
-1.  Anmelden unter www.github.com
-2.  Auf Benutzerkonto klicken (oben rechts) und den Punkt <strong>Settings</strong> aufrufen
-3.  Unter den Menübereichen auf der linken Seite zum Abschnitt <strong>SSH und GPG keys</strong> wechseln
-4.  Auf <strong>New SSH key</strong> klicken
-5.  Im Formular unter <strong>Title</strong> eine Bezeichnung vergeben (z.B. MB SSH-Key)
-6.  Den zuvor kopierten Key mit <i>CTRL + V</i> einfügen und auf <strong>Add SSH key</strong> klicken
-7.  Der Schlüssel (SSH-Key) sollte nun in der übergeordneten Liste auftauchen
-
-
-> Weiter Infos zu SSH-Keys in Zusammenhang mit GitHub und dem SSH-Agent findet man unter:
-
-> **GitHub-Help:**  https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
-
-> **Wikipedia:**    https://en.wikipedia.org/wiki/Ssh-agent
 
 
 ___
 
-![](images/Configfile_Logo_36x36.png "SSH") 05 - Zentrale SSH Konfigurationsfiles 
+![](images/Configfile_Logo_36x36.png "SSH") 03 - Zentrale SSH Konfigurationsfiles 
 ======
 
 > [⇧ **Nach oben**](#inhaltsverzeichnis)

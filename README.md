@@ -268,6 +268,7 @@ Eintrag in der letzten Zeile
   # ALL: PARANOID
   ALL: ALL EXCEPT 10.3.37.41
 ```
+<br>
 
 **Versuch 1**: in diesem Fall funktioniert es **nicht** (Reset/Abbruch) <br>
 Zugriff von **10.3.37.40** auf den Zielrechner **10.3.37.42**. Dieser Rechner hat **keine Exception** und darf somit **nicht zugreifen**:
@@ -282,6 +283,8 @@ Screenshot (Beispiel):
    ![Screenshot](images/10_SSH_800.png)
 
 Es erscheint die Meldung "Connection reset by peer". Der Verbindungsaufbau wurde somit abgebrochen; ich bleibe auf meinem Host.
+
+<br>
 
 **Versuch 2**: in diesem Fall funktioniert es (Success) <br>
 Zugriff von **10.3.37.41** auf den Zielrechner **10.3.37.42**. Dieser Rechner hat **eine Exception** und darf somit **zugreifen**:

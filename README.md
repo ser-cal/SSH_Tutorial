@@ -225,13 +225,11 @@ ___
 
 Es gibt verschiedene **Konfigurationsfiles**, die im Zusammenhang mit **SSH** eine Rolle spielen. 
 
-### Session Types 
-
-1. RSA rhost authentication
-    - /etc/hosts.allow
-    - /etc/hosts.deny
-    - /home/username/.rhosts
-    - /home/username/.shosts
+### RSA rhost authentication 
+  - /etc/hosts.allow
+  - /etc/hosts.deny
+  - /home/username/.rhosts
+  - /home/username/.shosts
 
   Hier können entweder **pro System** oder **pro Benutzer** Einschränkungen konfiguriert werden. 
 
@@ -286,10 +284,18 @@ Da ich zum ersten Mal von diesem Rechner zugreife, erscheint noch die Nachfrage,
 
 
 
-2. Private/Public Keypair authentication <br>
+2. ### SSH User keys location 
+  - /home/username/.ssh
+  - /etc/hosts.deny/Public Keypair authentication <br>
 
-3. Password authentication
+3. ### SSH System keys location 
+  - /etc/ssh
+  - /etc/hosts.deny/Public Keypair authentication <br>
 
+
+4. ### SSH System keys location 
+  - /etc/ssh
+  - /etc/hosts.deny/Public Keypair authentication <br>
 
 
 ### Client installieren

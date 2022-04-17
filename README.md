@@ -172,7 +172,7 @@ Im folgenden Abschnitt werden zwei Varianten erklärt. Bei der ersten Variante m
 
     ```
     Beispiel:
-   ![Screenshot](images/SSH_Agent_starten_800.png)
+   ![Screenshot](images/bash_profile_inhalt_800.png)
 
 
 

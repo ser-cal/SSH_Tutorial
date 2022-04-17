@@ -136,7 +136,7 @@ Im folgenden Abschnitt werden zwei Varianten erklärt. Bei der ersten Variante m
 
 <br>
 
-**Variante 2:** Persistent (SSH-Agent startet nach dem Starten des Laptops automatisch. Passphrase muss nur einmal (zu Beginn) eingegeben werden. 
+**Variante 2:** Persistent - SSH-Agent startet nach dem Login automatisch (Code liegt im .bash_profile, welches bei jedem Login gleich zu Beginn ausgeführt wird). Passphrase muss nur einmal (am Anfang) eingegeben werden. 
 
 1.  Bash_Profile sichern, bevor es geändert wird und anschliessend mit Editor öffnen:
     ```Shell

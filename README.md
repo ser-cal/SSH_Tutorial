@@ -255,6 +255,21 @@ Eintrag in der letzten Zeile
   ALL: ALL EXCEPT 10.3.37.41
 ```
 
+**1. Beweis:** (Reset/Abbruch) <br>
+Zugriff von 10.3.37.40 auf den Zielrechner 10.3.37.42. Dieser Rechner hat **keine Exception** und darf somit **nicht zugreifen**:
+
+   ![Screenshot](images/10_SSH_800.png)
+
+Es erscheint die Meldung "Connection reset by peer". Der Verbindungsaufbau wurde somit abgebrochen; ich bleibe auf meinem Host.
+
+**2. Beweis:** (Success) <br>
+Zugriff von 10.3.37.41 auf den Zielrechner 10.3.37.42. Dieser Rechner hat **eine Exception** und darf somit **zugreifen**:
+
+   ![Screenshot](images/11_SSH_800.png)
+
+Da ich zum ersten Mal von diesem Rechner zugreife, erscheint noch die Nachfrage, ob der Fingerprint des Systems akzeptiert werden möchte. Nach der Bestätigung werde ich zugelassen.
+
+
 
 2. Private/Public Keypair authentication <br>
 

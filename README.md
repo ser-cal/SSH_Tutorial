@@ -214,7 +214,7 @@ ___
 
 > [⇧ **Nach oben**](#inhaltsverzeichnis)
 
-SSH arbeitet mit einer von drei unterschiedlichen **Session Types**. Jeder **Session Type** nutzt dasselbe Protokoll und denselben Port; auf der Serverseite gibt es allerdings für jeden ein separates Config-File.
+SSH arbeitet mit einem von drei unterschiedlichen **Session Types**. Jeder **Session Type** nutzt dasselbe Protokoll und denselben Port; auf der Serverseite gibt es allerdings für jeden davon ein **eigenes** Config-File.
 
 ### Session Types 
 

@@ -284,18 +284,24 @@ Da ich zum ersten Mal von diesem Rechner zugreife, erscheint noch die Nachfrage,
 
 
 
-2. ### SSH User keys location 
-  - /home/username/.ssh
-  - /etc/hosts.deny/Public Keypair authentication <br>
+### SSH User keys location 
+  - /home/username/.ssh <br>
+    *hier sind die Keys (private & public), sowie die config und known-hosts-Datei abgelegt*
 
-3. ### SSH System keys location 
+    das erstellen der Keys wurde bereits weiter oben erklärt. Hier noch en paar Informationen zur **known-hosts**-Datei.
+    Immer wenn ich mit meinem Host zum erstem Mal auf ein anderes System zugreife, erhalte ich von diesem System einen "Fingerprint". Um mich erfolgreich darauf anzumelden, muss ich mit **yes** bestätigen. 
+
+### SSH System keys location 
   - /etc/ssh
   - /etc/hosts.deny/Public Keypair authentication <br>
 
 
-4. ### SSH System keys location 
-  - /etc/ssh
-  - /etc/hosts.deny/Public Keypair authentication <br>
+### SSH configuration files 
+  - /etc/ssh/ssh_config (Control Client verhalten)
+  - /etc/ssh/sshd_config (Control Server verhalten) <br>
+
+
+
 
 
 ### Client installieren

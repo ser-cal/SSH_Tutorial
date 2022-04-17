@@ -39,7 +39,7 @@ Diese Umgebung wird verwendet, weil benötige Programme wie `git`, `ssh-keygen` 
 
 * 01 - [Wichtige Linux-Kommandos](#-01---Wichtige-Linux-Kommandos)
 * 02 - [SSH Keypair erstellen](#-02---SSH-Keypair-erstellen)
-* 03 - [Zentrale SSH Konfigurationsfiles](#-03---Zentrale-SSH-Konfigurationsfiles)
+* 03 - [SSH Session-Types](#-03---SSH-Session-Types)
 * 03 - [VirtualBox](#--03---virtualbox)
 * 04 - [Vagrant](#--04---vagrant)
 * 03 - [Zentrale SSH Konfigurationsfiles](#-03---Zentrale-SSH-Konfigurationsfiles)
@@ -209,7 +209,7 @@ Im folgenden Abschnitt werden zwei Varianten erklärt. Bei der ersten Variante m
 
 ___
 
-![](images/Configfile_Logo_36x36.png "SSH") 03 - Zentrale SSH Konfigurationsfiles 
+![](images/Configfile_Logo_36x36.png "SSH") 03 - SSH-Session-Types 
 ======
 
 > [⇧ **Nach oben**](#inhaltsverzeichnis)

@@ -179,9 +179,9 @@ Wenn alles korrekt konfiguriert worden ist, und der zugehörige Public-Key auf d
 
 Wenn ich ja jetzt für den Verbindungsaufbau weder ein Passwort noch eine Passphrase benötige, stellt sich die Frage, ob dies ein Security-Issue darstellt. Die Antwort ist "**Nein**". Aber wie lautet die Begründung? 
 
-Nun: Falls jemand in den Besitz unseres **Private-Keys** kommt, muss er oder sie zusätzlich noch die Passphrase kennen. Wir erinnern uns: Immer zu Beginn einer Session, also bei der Eingabe des ersten SSH-Befehls, muss die Passphrase eingegeben werden. In unserem Fall ist das System so konfiguriert, dass der **SSH-Agent** im **.bash_profile** automatisch gestartet wird. In der gleichen Codeabfolge wird ihm der Private-Key angehängt. 
+Nun: Falls jemand in den Besitz unseres **Private-Keys** kommt, muss er oder sie zusätzlich noch die Passphrase kennen. Wir erinnern uns: Immer zu Beginn einer Session, also **vor** der Eingabe des **ersten** SSH-Befehls, **muss** die **Passphrase** eingegeben werden. In unserem Fall ist das System so konfiguriert, dass der **SSH-Agent** im **.bash_profile** automatisch gestartet wird. In der gleichen Codeabfolge wird ihm der Private-Key angehängt. Das funktioniert aber nur, wenn die entsprechende Eingabe mit der korrekten **Passphrase** übereinstimmt!
 
-Dieses Verfahren ist also **sicher** und hilft uns, **effizient** Code mit einem Repository abzugleichen (push/pull), oder **unkompliziert** auf andere Systeme zuzugreifen.
+Dieses Verfahren ist also **sicher** und hilft uns anschliessend, **effizient** Code mit einem Repository abzugleichen (push/pull), oder **unkompliziert** auf andere Systeme zuzugreifen.
 
 
 

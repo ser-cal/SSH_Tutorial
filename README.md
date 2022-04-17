@@ -241,7 +241,7 @@ Es gibt verschiedene **Konfigurationsfiles**, die im Zusammenhang mit **SSH** ei
    ![Screenshot](images/12_SSH-Lab_v2_800.jpg)
 
 
-**Host: 10.3.37.42**
+**Host: 10.3.37.42** wie folgt konfigurieren:
 
 Konfigurationsfile mit Editor öffnen
 ```Shell

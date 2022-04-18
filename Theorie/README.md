@@ -278,14 +278,15 @@ Da ich zum ersten Mal von diesem Rechner zugreife, erscheint noch die Nachfrage,
 
 
 ### SSH configuration files 
-  - **/etc/ssh/ssh_config** (Control Client verhalten)
-  - **/etc/ssh/sshd_config** (Control Server verhalten)
-
-    **ssh_config**:<br>
+  - **/etc/ssh/ssh_config** (Control Client verhalten)<br>
     Dieses Konfigurationsfile ist für den SSH-Client auf dem Host.
     Beispiel: Wenn man vom aktuellen Host auf ein anderes System zugreifen will, benutzt man den SSH-Client. In diesem Fall greifen die Settings im **ssh_config** (z.B. Portnummer, Protokoll-Version, Encryption-Algorythmus etc..)
 
-    **sshd_config**:<br>
+
+  - **/etc/ssh/sshd_config** (Control Server verhalten)<br>
+  Dieses Konfigurationsfile ist für den SSHD-Daemon (das Programm, welches standardmässig auf dem SSH-Port auf horcht und Verbindungsanfragen von entfernten Systemen annimmt)
+
+
     
 
 

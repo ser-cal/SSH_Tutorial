@@ -191,15 +191,16 @@ ___
 
 Es gibt verschiedene **Konfigurationsfiles**, die im Zusammenhang mit **SSH** eine Rolle spielen. 
 
+Noch **bevor** der SSH-Daemon ins Spiel kommt, kann ich auf meinem System übergeordnete **Restriktionen** vornehmen. In folgenden Konfigurationsfiles kann ich definieren, wer Zugriff auf mein System erhält. Dabei kann ich von **grob** (ganze Topleveldomains oder Subnetze) bis **fein** (Einzelne Hosts oder einzelne Benutzer) Berechtigungen zuweisen oder entfernen.
+
 ### RSA rhost authentication 
   - /etc/hosts.allow
   - /etc/hosts.deny
   - /home/username/.rhosts
   - /home/username/.shosts
 
-  Hier können entweder **pro System** oder **pro Benutzer** Einschränkungen konfiguriert werden. 
-
   ### Anwendungsfall
+  
   Im folgenden Beispiel werden auf dem System **10.3.37.42** (Bild unten, gelbes Feld links) im **/etc/hosts.deny** sämtliche Zugriffe von "entfernten" Systemen unterbunden - mit einer Ausnahme: Das System mit der IP-Adresse **10.3.37.41** (Bild unten, oranges Feld oben rechts), welches mit einem "EXCEPT"-Eintrag von dieser Regel ausgeschlossen wird. Dieselbe Bedingung könnte auch erfüllt werden, wenn stattdessen ein entsprechender Eintrag im **/etc/hosts.allow** gemacht würde.
 
 **Illustration:**

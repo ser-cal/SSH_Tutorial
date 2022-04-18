@@ -200,7 +200,7 @@ Noch **bevor** der SSH-Daemon ins Spiel kommt, kann ich auf meinem System überg
   - /home/username/.shosts
 
   ### Anwendungsfall
-  
+
   Im folgenden Beispiel werden auf dem System **10.3.37.42** (Bild unten, gelbes Feld links) im **/etc/hosts.deny** sämtliche Zugriffe von "entfernten" Systemen unterbunden - mit einer Ausnahme: Das System mit der IP-Adresse **10.3.37.41** (Bild unten, oranges Feld oben rechts), welches mit einem "EXCEPT"-Eintrag von dieser Regel ausgeschlossen wird. Dieselbe Bedingung könnte auch erfüllt werden, wenn stattdessen ein entsprechender Eintrag im **/etc/hosts.allow** gemacht würde.
 
 **Illustration:**
@@ -268,7 +268,6 @@ Screenshot (Beispiel):<br>
 Da ich zum ersten Mal von diesem Rechner zugreife, erscheint noch die Nachfrage, ob der Fingerprint des Systems akzeptiert werden möchte. Nach der Bestätigung werde ich zugelassen.
 
 
-
 ### SSH User keys location 
   - **/home/username/.ssh** <br>
     *hier sind die Keys (private & public), sowie die config und known-hosts-Datei abgelegt*.
@@ -288,8 +287,10 @@ Da ich zum ersten Mal von diesem Rechner zugreife, erscheint noch die Nachfrage,
   Damit dieser Zugriff funktioniert, müssen die Client-Settings auf dem anderen System mit den **sshd-config**-Settings übereinstimmen (z.B. Port-Nummer, Version etc...).
   
 ### SSH-Hardening:
-   Wenn man von SSH-Hardening spricht, dann ist insbesondere die Anpassung dieses Files (/etc/ssh/sshd_config) gemeint. Die folgende imperative Anleitung zeigt, wie Systeme im Enterprise-Umfeld gehärtet werden.
-   
+Wenn man von SSH-Hardening spricht, dann ist insbesondere die Anpassung dieses Files (/etc/ssh/sshd_config) gemeint. Die folgende imperative Anleitung zeigt, wie Systeme im Enterprise-Umfeld gehärtet werden.
+
+Bei der Bearbeitung einer Konfigurationsdatei können standardmäßig einige Optionen mit einem einzelnen Hash-Zeichen (#) am Anfang der Zeile auskommentiert werden. Um diese Optionen zu bearbeiten oder die kommentierte Option anerkennen zu lassen, muss man sie unkommentieren, indem man vorne einfach den Hash (**#**) entfernt.
+
 Konfigurationsdatei sichern:
 ```Shell
   $ sudo cd /etc/ssh #Ins Verzeichnis wechseln

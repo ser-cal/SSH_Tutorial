@@ -1,4 +1,6 @@
-[30]: https://github.com/ser-cal/SSH_Tutorial/tree/main/Theorie#-01---wichtige-linux-kommandos
+[01]: https://github.com/ser-cal/SSH_Tutorial/tree/main/Theorie#-01---wichtige-linux-kommandos
+[02]: https://github.com/ser-cal/SSH_Tutorial/tree/main/Theorie#-02---ssh-keys-und-ssh-agent
+[03]: https://github.com/ser-cal/SSH_Tutorial/tree/main/Theorie#-03---zentrale-ssh-konfigurationsfiles
 
 
 # SSH verstehen und anwenden
@@ -26,7 +28,7 @@ Diese **Skills** gehören, ähnlich wie z.B. **Netzwerkgrundlagen**, zum unverzi
 ## Hier geht es zu den Inhalten
 
 ### [**Theorie:**](Theorie)
-* 01 - Wichtige Linux-Kommandos
+* 01 - [Wichtige Linux-Kommandos][01]
 * 02 - SSH-Keys und SSH-Agent
 * 03 - Zentrale SSH Konfigurationsfiles
 

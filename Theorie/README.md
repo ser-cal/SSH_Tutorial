@@ -276,13 +276,17 @@ Da ich zum ersten Mal von diesem Rechner zugreife, erscheint noch die Nachfrage,
     Immer wenn ich mit meinem Host zum erstem Mal auf ein anderes System zugreife, erhalte ich von diesem System einen "Fingerprint", den ich mit **yes** bestätigen muss, um mich erfolgreich darauf anzumelden. Hier ist es wichtig, dass man sich nochmals vergewissert, ob man auf das richtige System zugreift - denn nach der Bestätigung wird dieser Fingerprint in der persönlichen **known-hosts**-Datei abgelegt. Bei späteren Zugriffen auf diesen Zielhost geht das System deshalb davon aus, dass es sich um einen vertrauenswürdigen Rechner handelt.  
     Diese Abfrage kann z.B. **Man-in-the-Middle**-Angriffe vermeiden (dieselbe IP-Adresse eines Dritten würde nicht zugelassen). Es kann aber auch sein, dass z.B. ein DHCP-Server eine bereits bestätigte IP-Adresse einem anderen System zuweist und der Zugriff dadurch nicht mehr funktioniert. In solchen Fällen muss einfach der entsprechende Fingerprint im **known-hosts**-File gelöscht werden.  
 
-### SSH System keys location 
-  - **/etc/ssh**
 
 ### SSH configuration files 
   - **/etc/ssh/ssh_config** (Control Client verhalten)
   - **/etc/ssh/sshd_config** (Control Server verhalten) <br>
 
+    **ssh_config**:<br>
+    Dieses Konfigurationsfile ist für den SSH-Client auf dem Host.
+    Beispiel: Wenn man vom aktuellen Host auf ein anderes System zugreifen will, benutzt man den SSH-Client. In diesem Fall greifen die Settings im **ssh_config** (z.B. Portnummer, Protokoll-Version, Encryption-Algorythmus etc..)
+
+    **sshd_config**:<br>
+    
 
 
 

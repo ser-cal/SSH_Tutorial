@@ -1,4 +1,4 @@
-[30] https://github.com/ser-cal/SSH_Tutorial/tree/main/Theorie#-01---wichtige-linux-kommandos
+[30]: https://github.com/ser-cal/SSH_Tutorial/tree/main/Theorie#-01---wichtige-linux-kommandos
 
 
 # SSH verstehen und anwenden

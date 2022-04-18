@@ -310,8 +310,12 @@ Als erstes muss für den Root-Account die Anmeldung über SSH **deaktiviert** we
 ```
 Parameter **PermitRootLogin** auf **no** setzen
 ```Shell
-  PermitRootLogin No 
+  PermitRootLogin No
 ```
+
+Das ist sehr wichtig, da es einen potenziellen Angreifer daran hindert, sich direkt als root anzumelden. Das unterstützt zudem gute betriebliche Sicherheitspraktiken wie das Operieren als nicht privilegierter Benutzer und die Verwendung von **sudo**, um Berechtigungen nur dann auszuweiten, wenn es unbedingt erforderlich ist.
+Dieses Vorgehen ist inzwischen auch bei sämtlichen Banken in der Region Zürich "Best Practice". Da im **sudoers.conf** festgelegt wird, wer welche Rechte hat und sich alle via **sudo** authentifizieren müssen, wird zu jedem Zeitpunkt genau festgehalten, wer wann welches Kommando ausgeführt hat. Würden z.B. mehrere Administratoren Zugang zum Root-Passwort haben und wäre ein Root-Login erlaubt, wäre dies nicht möglich. 
+
 
   Wichtige Settings:
 

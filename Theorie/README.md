@@ -279,8 +279,7 @@ Da ich zum ersten Mal von diesem Rechner zugreife, erscheint noch die Nachfrage,
 
 ### SSH configuration files 
   - **/etc/ssh/ssh_config** (Control Client verhalten)<br>
-    Dieses Konfigurationsfile ist für den SSH-Client auf dem Host.
-    Beispiel: Wenn man vom aktuellen Host auf ein anderes System zugreifen will, benutzt man den SSH-Client. In diesem Fall greifen die Settings im **ssh_config** (z.B. Portnummer, Protokoll-Version, Encryption-Algorythmus etc..)
+    Wenn man vom aktuellen Host auf ein anderes System zugreifen will, benutzt man den SSH-Client. In diesem Fall greifen die Settings im **ssh_config** (z.B. Portnummer, Protokoll-Version, Encryption-Algorythmus etc..)
 
   - **/etc/ssh/sshd_config** (Control Server verhalten)<br>
   Dieses Konfigurationsfile wird vom lokalen SSH-Daemon genutzt (der Dienst, welcher standardmässig auf dem SSH-Port horcht und Verbindungsanfragen von entfernten Systemen entgegennimmt).
@@ -297,7 +296,7 @@ Konfigurationsdatei sichern:
 ```
 Bevor man die Konfigurationsdatei bearbeitet, können die aktuell festgelegten Optionen überprüft werden. Mit folgendem Befehl wird auf dem OpenSSH-Server ein erweiterter Testmodus ausgeführt, welcher die vollständige Konfigurationsdatei validiert und die effektiven Konfigurationswerte ausgibt.
 ```Shell
-  $ sudo sshd -T #Validierung/Test
+  $ sudo sshd -T #Validierung/Ausgabe sämtlicher Parameter
 ```
 Screenshot (Beispiel):<br>
    ![Screenshot](images/12_sshd_config_800.png)

@@ -316,11 +316,17 @@ Parameter **PermitRootLogin** auf **no** setzen
 Das ist sehr wichtig, da es einen potenziellen Angreifer daran hindert, sich direkt als root anzumelden. Das unterstützt zudem gute betriebliche Sicherheitspraktiken wie das Operieren als nicht privilegierter Benutzer und die Verwendung von **sudo**, um Berechtigungen nur dann auszuweiten, wenn es unbedingt erforderlich ist.
 Dieses Vorgehen ist inzwischen auch bei sämtlichen Banken in der Region Zürich "Best Practice". Da im **sudoers.conf** festgelegt wird, wer welche Rechte hat und sich alle via **sudo** authentifizieren müssen, wird zu jedem Zeitpunkt genau festgehalten, wer wann welches Kommando ausgeführt hat. Würden z.B. mehrere Administratoren Zugang zum Root-Passwort haben und wäre ein Root-Login erlaubt, wäre dies nicht möglich. 
 
+Folgendes Bild verdeutlicht die Authentifizierung von den beiden Benutzern **Norris** (links oben) und **Ricciardo** (links unten). Der Ablauf wird weiter unten in vier Schritten erklärt:
 
-  Wichtige Settings:
+**Illustration:**
+
+   ![Screenshot](images/13_SSH_SUDO_v2_800.jpg)
 
 
-
+1. Beide verbinden sich via **SSH** mit dem Server
+2. Die Authentifizierung findet mittels Private- und Public-Key statt. Da beide ihren Public-Key auf dem Server hinterlegt haben, können sie sich einloggen.
+3. Beide durchlaufen das **/etc/sudoers.conf**. Hier wird jedem Benutzer die ihm zugewiesenen Berechtigungen zugeteilt. 
+4. Beide sind nun auf dem Zielrechner eingeloggt, haben aber unterschiedliche Berechtigungen (Norris kann Root-Recht erlangen, Ricciardo nicht)
     
 
 

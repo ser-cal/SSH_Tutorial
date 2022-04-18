@@ -245,7 +245,7 @@ Befehle auf System **10.3.37.40**:
   $ ssh mclaren@10.3.37.42 #Zugriff auf 10.3.37.42
 ```
 
-Screenshot (Beispiel):
+Screenshot (Beispiel):<br>
    ![Screenshot](images/10_SSH_800.png)
 
 Es erscheint die Meldung "Connection reset by peer". Der Verbindungsaufbau wurde somit abgebrochen; ich bleibe auf meinem Host.
@@ -261,7 +261,7 @@ Befehle auf System **10.3.37.41**:
   $ ip address show wg0 #wg0 IP 10.3.37.41
   $ ssh mclaren@10.3.37.42 #Zugriff auf 10.3.37.42
 ```
-Screenshot (Beispiel):
+Screenshot (Beispiel):<br>
    ![Screenshot](images/11_SSH_800.png)
 
 Da ich zum ersten Mal von diesem Rechner zugreife, erscheint noch die Nachfrage, ob der Fingerprint des Systems akzeptiert werden möchte. Nach der Bestätigung werde ich zugelassen.

@@ -282,9 +282,18 @@ Da ich zum ersten Mal von diesem Rechner zugreife, erscheint noch die Nachfrage,
     Dieses Konfigurationsfile ist für den SSH-Client auf dem Host.
     Beispiel: Wenn man vom aktuellen Host auf ein anderes System zugreifen will, benutzt man den SSH-Client. In diesem Fall greifen die Settings im **ssh_config** (z.B. Portnummer, Protokoll-Version, Encryption-Algorythmus etc..)
 
-
   - **/etc/ssh/sshd_config** (Control Server verhalten)<br>
-  Dieses Konfigurationsfile ist für den SSHD-Daemon (das Programm, welches standardmässig auf dem SSH-Port auf horcht und Verbindungsanfragen von entfernten Systemen annimmt)
+  Dieses Konfigurationsfile wird vom lokalen SSH-Daemon genutzt (der Dienst, welcher standardmässig auf dem SSH-Port horcht und Verbindungsanfragen von entfernten Systemen entgegennimmt).
+  Beispiel: Wenn jemand von einem entfernten System via SSH auf unseren Host zugreifen will. 
+  Damit dieser Zugriff funktioniert, müssen die Client-Settings auf dem anderen System mit den **sshd-config**-Settings übereinstimmen (z.B. Port-Nummer, Version etc...).
+  
+  - **SSH-Hardening**:<br>
+   Wenn man von SSH-Hardening spricht, dann ist insbesondere die Anpassung dieses Files (/etc/ssh/sshd_config) gemeint. Die folgende imperative Anleitung zeigt, wie Systeme im Enterprise-Umfeld gehärtet werden.
+   
+   
+
+  Wichtige Settings:
+
 
 
     

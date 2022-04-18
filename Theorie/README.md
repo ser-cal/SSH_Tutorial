@@ -287,7 +287,7 @@ Da ich zum ersten Mal von diesem Rechner zugreife, erscheint noch die Nachfrage,
   Beispiel: Wenn jemand von einem entfernten System via SSH auf unseren Host zugreifen will. 
   Damit dieser Zugriff funktioniert, müssen die Client-Settings auf dem anderen System mit den **sshd-config**-Settings übereinstimmen (z.B. Port-Nummer, Version etc...).
   
-  - **SSH-Hardening**:<br>
+### SSH-Hardening:
    Wenn man von SSH-Hardening spricht, dann ist insbesondere die Anpassung dieses Files (/etc/ssh/sshd_config) gemeint. Die folgende imperative Anleitung zeigt, wie Systeme im Enterprise-Umfeld gehärtet werden.
    
 Konfigurationsdatei sichern:

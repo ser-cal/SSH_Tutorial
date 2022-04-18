@@ -279,7 +279,7 @@ Da ich zum ersten Mal von diesem Rechner zugreife, erscheint noch die Nachfrage,
 
 ### SSH configuration files 
   - **/etc/ssh/ssh_config** (Control Client verhalten)
-  - **/etc/ssh/sshd_config** (Control Server verhalten) <br>
+  - **/etc/ssh/sshd_config** (Control Server verhalten)
 
     **ssh_config**:<br>
     Dieses Konfigurationsfile ist für den SSH-Client auf dem Host.

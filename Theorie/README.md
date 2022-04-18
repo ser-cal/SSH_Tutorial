@@ -287,9 +287,9 @@ Da ich zum ersten Mal von diesem Rechner zugreife, erscheint noch die Nachfrage,
   Damit dieser Zugriff funktioniert, müssen die Client-Settings auf dem anderen System mit den **sshd-config**-Settings übereinstimmen (z.B. Port-Nummer, Version etc...).
   
 ### SSH-Hardening:
-Wenn man von SSH-Hardening spricht, dann ist insbesondere die Anpassung dieses Files (/etc/ssh/sshd_config) gemeint. Die folgende imperative Anleitung zeigt, wie Systeme im Enterprise-Umfeld gehärtet werden.
+Wenn man von SSH-Hardening spricht, dann ist insbesondere die Anpassung des Files **/etc/ssh/sshd_config** gemeint. Die folgende imperative Anleitung zeigt, wie Systeme im Enterprise-Umfeld gehärtet werden.
 
-Bei der Bearbeitung einer Konfigurationsdatei können standardmäßig einige Optionen mit einem einzelnen Hash-Zeichen (#) am Anfang der Zeile auskommentiert werden. Um diese Optionen zu bearbeiten oder die kommentierte Option anerkennen zu lassen, muss man sie unkommentieren, indem man vorne einfach den Hash (**#**) entfernt.
+Bei der Bearbeitung einer Konfigurationsdatei können standardmäßig einige Optionen mit einem einzelnen Hash-Zeichen (**#**) am Anfang der Zeile auskommentiert werden. Um diese Optionen zu bearbeiten oder die kommentierte Option anerkennen zu lassen, muss man sie unkommentieren, indem man vorne einfach den Hash (**#**) entfernt.
 
 Konfigurationsdatei sichern:
 ```Shell
@@ -303,7 +303,15 @@ Bevor man die Konfigurationsdatei bearbeitet, können die aktuell festgelegten O
 Screenshot (Beispiel):<br>
    ![Screenshot](images/12_sshd_config_800.png)
 
+Als erstes muss für den Root-Account die Anmeldung über SSH **deaktiviert** werden:
 
+```Shell
+  $ vi /etc/ssh/sshd_config #Datei in einem Editor öffnen
+```
+Parameter **PermitRootLogin** auf **no** setzen
+```Shell
+  PermitRootLogin No 
+```
 
   Wichtige Settings:
 

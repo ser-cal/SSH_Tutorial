@@ -27,7 +27,7 @@ Diese **Skills** gehören, ähnlich wie z.B. **Netzwerkgrundlagen**, zum unverzi
 
 ## Hier geht es zu den Inhalten
 
-### [**Theorie:** Hauptseite](Theorie)
+### [**Theorie Landingpage**](Theorie)
 * [01 - Wichtige Linux-Kommandos][01]
 * [02 - SSH-Keys und SSH-Agent][02]
 * [03 - Zentrale SSH Konfigurationsfiles][03]
@@ -35,7 +35,7 @@ Diese **Skills** gehören, ähnlich wie z.B. **Netzwerkgrundlagen**, zum unverzi
 
 ---
 
-### [**Praxis:**](Praxis)
+### [**Praxis Landingpage:**](Praxis)
 - [**Lab 1**](Praxis/Lab1)
 - [**Lab 2**](Praxis/Lab2)
 <br>

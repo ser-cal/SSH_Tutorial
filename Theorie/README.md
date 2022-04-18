@@ -290,7 +290,19 @@ Da ich zum ersten Mal von diesem Rechner zugreife, erscheint noch die Nachfrage,
   - **SSH-Hardening**:<br>
    Wenn man von SSH-Hardening spricht, dann ist insbesondere die Anpassung dieses Files (/etc/ssh/sshd_config) gemeint. Die folgende imperative Anleitung zeigt, wie Systeme im Enterprise-Umfeld gehärtet werden.
    
-   
+Konfigurationsdatei sichern:
+```Shell
+  $ sudo cd /etc/ssh #Ins Verzeichnis wechseln
+  $ sudo cp sshd_config sshd_config.ORIG #Sicherheitskopie des Configfiles
+```
+Bevor man die Konfigurationsdatei bearbeitet, können die aktuell festgelegten Optionen überprüft werden. Mit folgendem Befehl wird auf dem OpenSSH-Server ein erweiterter Testmodus ausgeführt, welcher die vollständige Konfigurationsdatei validiert und die effektiven Konfigurationswerte ausgibt.
+```Shell
+  $ sudo sshd -T #Validierung/Test
+```
+Screenshot (Beispiel):<br>
+   ![Screenshot](images/12_sshd_config_800.png)
+
+
 
   Wichtige Settings:
 

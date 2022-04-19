@@ -1,5 +1,9 @@
 [10]: https://git-scm.com/downloads
 [20]: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases#auto-launching-ssh-agent-on-git-for-windows
+[30]: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/
+[31]: working-with-ssh-key-passphrases#auto-launching-ssh-agent-on-git-for-windows
+[32]: https://man.openbsd.org/sshd_config
+[33]: https://man.openbsd.org/sshd_config
 
 
 Inhaltsverzeichnis
@@ -345,3 +349,8 @@ ___
 
 ![](images/SSH_Logo_36x36.png "SSH") 06 - Quellenverzeichnis 
 ====
+
+- [SSH - Ubuntuusers][30]
+- [Working with SSH Key Passphrases][31]
+- [sshd_config][32]
+- [SSH härten][33]

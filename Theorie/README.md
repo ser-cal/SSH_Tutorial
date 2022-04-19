@@ -309,7 +309,7 @@ Screenshot (Beispiel):<br>
 
 <br>
 
-1. Als erstes muss für den Root-Account die Anmeldung über SSH **deaktiviert** werden:
+**1.** Als erstes muss für den Root-Account die Anmeldung über SSH **deaktiviert** werden:
 
 ```Shell
   $ vi /etc/ssh/sshd_config #Datei in einem Editor öffnen
@@ -336,9 +336,10 @@ Folgendes Bild verdeutlicht die Authentifizierung von den beiden Benutzern **Nor
 **Punkt 3:** Beide durchlaufen das **/etc/sudoers.conf**. Hier wird jedem Benutzer die ihm zugewiesenen Berechtigungen zugeteilt. 
 
 **Punkt 4:** Beide sind nun auf dem Zielrechner eingeloggt, haben aber unterschiedliche Berechtigungen (Norris kann Root-Recht erlangen, Ricciardo nicht)
-    
 
-2. Als Nächstes sollte die maximale Anzahl der Authentifizierungsversuche für eine bestimmte Anmeldesitzung wie folgt begrenzt werden:
+<br>  
+
+**2.** Als Nächstes sollte die maximale Anzahl der Authentifizierungsversuche für eine bestimmte Anmeldesitzung wie folgt begrenzt werden:
 
 <br>
 
@@ -348,7 +349,9 @@ Parameter **MaxAuthTries** auf **3** setzen
 ```
 Für die meisten Einstellungen ist ein Standardwert von 3 akzeptabel. Man kann hier jedoch je nach eigener Risikoschwelle einen höheren oder niedrigeren Wert festlegen.
 
-3. Bei Bedarf eine reduzierte Anmeldefrist festgelegt werden. Das ist die Zeitspanne, in der ein Benutzer die Authentifizierung abschließen muss, nachdem er sich mit dem SSH-Server verbunden hat:
+<br>
+
+**3.** Bei Bedarf eine reduzierte Anmeldefrist festgelegt werden. Das ist die Zeitspanne, in der ein Benutzer die Authentifizierung abschließen muss, nachdem er sich mit dem SSH-Server verbunden hat:
 
 Parameter **LoginGraceTime** auf z.B. **20** setzen
 ```Shell
@@ -358,7 +361,9 @@ Die Konfigurationsdatei gibt diesen Wert in **Sekunden** an.
 
 Eine Einstellung auf einen niedrigeren Wert kann helfen, bestimmte **Denial-of-Service-Angriffe** zu verhindern, bei denen mehrere Authentifizierungssitzungen für einen **längeren Zeitraum** offen gehalten werden.
 
-4. Wenn SSH-Schlüssel für die Authentifizierung konfiguriert wurden anstatt Passwörter zu verwenden, kann die SSH-Passwortauthentifizierung deaktiviert werden. So wird verhindert, dass sich ein Angreifer mit **geleakten Benutzerpasswörtern** anmelden kann.
+<br>
+
+**4.** Wenn SSH-Schlüssel für die Authentifizierung konfiguriert wurden anstatt Passwörter zu verwenden, kann die SSH-Passwortauthentifizierung deaktiviert werden. So wird verhindert, dass sich ein Angreifer mit **geleakten Benutzerpasswörtern** anmelden kann.
 
 
 

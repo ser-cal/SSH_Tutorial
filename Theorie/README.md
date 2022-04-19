@@ -4,7 +4,7 @@
 [31]: working-with-ssh-key-passphrases#auto-launching-ssh-agent-on-git-for-windows
 [32]: https://man.openbsd.org/sshd_config
 [33]: https://man.openbsd.org/sshd_config
-
+[34]: https://www.thomas-krenn.com/de/wiki/OpenSSH_Public_Key_Authentifizierung_unter_Ubuntu
 
 Inhaltsverzeichnis
 ====
@@ -354,3 +354,4 @@ ___
 - [Working with SSH Key Passphrases][31]
 - [sshd_config][32]
 - [SSH härten][33]
+- [OpenSSH Public Key Authentifizierung unter Ubuntu][34]

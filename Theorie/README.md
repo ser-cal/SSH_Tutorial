@@ -78,6 +78,13 @@ Um das Abgleichen der Inhalte zwischen dem Origin und dem Main/Master-Repository
 **Vorteil:** Man muss sich nur einmal authentifizieren und kann anschliessend Projektänderungen **ohne** Passwort oder Passphrase-Eingabe "pushen" oder "pullen". Ausserdem kann ich anschliessend ohne Authentifizierung auf sämtliche Rechner zugreifen, welche meinen Public-Key hinterlegt haben. Damit habe ich sehr schnell, sicher und sehr unkompliziert Zugriff auf sämtliche Systeme, die ich administriere. 
 
 **Windows und Linux:**
+
+In diesem Tutorial benutze ich den **GitBash Client**. Dieser kann wie folgt installiert werden:
+1. Installer unter [dieser Webseite](https://git-scm.com/downloads) herunterladen 
+2. Die Installation erfolgt GUI-basiert, jedoch Standard (ohne speziellen Anpassungen). Daher wird an dieser Stelle auf eine Erklärung verzichtet.
+3. Sobald der Vorgang abgeschlossen wurde, kann mit der Konfiguration fortgefahren werden.
+
+
 Im folgenden Abschnitt werden zwei Varianten erklärt. Bei der ersten Variante muss der Ablauf bei jedem neuen Login durchgeführt werden (Non-Persistent). Bei der zweiten Variante wird ein Script in das .bash-profile eingefügt, welches beim Login des Benutzers automatisch ausgeführt wird (Persistent)
 
 **Variante 1:** Non-Persistent (muss bei jedem Login neu ausgeführt werden)
@@ -396,20 +403,9 @@ Wenn Sie mit der Konfigurationsdatei zufrieden sind, können Sie sshd neu laden,
 
 <br>
 
----
-
-### Client installieren
-***
-1. Für die Client-Installation muss der Installer unter [dieser Webseite](https://git-scm.com/downloads) heruntergeladen werden 
-2. Die Installation erfolgt GUI-basiert, jedoch Standard (ohne speziellen Anpassungen). Daher wird an dieser Stelle auf eine Erklärung verzichtet.
-3. Sobald der Vorgang abgeschlossen wurde, kann mit der Konfiguration fortgefahren werden.
-
-
-<br><br>
-
 ___
 
-![](images/SSH_Logo_36x36.png "SSH") 06 - Quellenverzeichnis 
+![](images/Library_Logo_36x36.png "SSH") 06 - Quellenverzeichnis 
 ====
 
 - [SSH - Ubuntuusers][30]

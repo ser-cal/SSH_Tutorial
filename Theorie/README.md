@@ -363,10 +363,28 @@ Eine Einstellung auf einen niedrigeren Wert kann helfen, bestimmte **Denial-of-S
 <br>
 
 **4.** Wenn SSH-Schlüssel für die Authentifizierung konfiguriert wurden anstatt Passwörter zu verwenden, kann die SSH-Passwortauthentifizierung deaktiviert werden. So wird verhindert, dass sich ein Angreifer mit **geleakten Benutzerpasswörtern** anmelden kann.
+```Shell
+  PasswordAuthentification no
+```
+Als eine weitere Härtungsmaßnahme in Bezug auf Passwörter kann bei Bedarf auch die Authentifizierung mit leeren Passwörtern deaktiviert werden. Dadurch wird die Anmeldung verhindert, wenn das Passwort eines Benutzers auf einen blanken oder leeren Wert gesetzt ist:
+```Shell
+  PermitEmptyPasswords no
+```
+In den meisten Anwendungsfällen wird SSH mit der Authentifizierung mit **öffentlichen Schlüsseln** als die **einzige** Authentifizierungsmethode konfiguriert. OpenSSH-Server unterstützt aber noch viele andere Authentifizierungsmethoden, von denen einige standardmäßig aktiviert sind. Wenn diese nicht erforderlich sind, können Sie sie deaktivieren, um die Angriffsoberfläche Ihres SSH-Servers weiter zu reduzieren:
+```Shell
+  ChallengeResponseAuthentication no
+  KerberosAuthentication no
+  GSSAPIAuthentication no
+```
+Wenn Sie mehr über einige der in SSH verfügbaren zusätzlichen Authentifizierungsmethoden erfahren möchten, stehen Ihnen diese Ressourcen zur Verfügung:
 
+- [Challenge–response authentication]([https://en.wikipedia.org/wiki/Challenge%E2%80%93response_authentication)
+- [Kerberos und SSH](https://docstore.mik.ua/orelly/networking_2ndEd/ssh/ch11_04.htm)
+- [GSSAPI-Authentifizierung](https://de.wikipedia.org/wiki/GSSAPI)
 
+<br>
 
-
+---
 
 ### Client installieren
 ***

@@ -384,6 +384,19 @@ Wenn Sie mehr über einige der in SSH verfügbaren zusätzlichen Authentifizieru
 
 <br>
 
+Validieren Sie nun die Syntax Ihrer neuen Konfiguration, indem Sie sshd im Testmodus ausführen:
+```Shell
+  $ sudo sshd -T #Validierung/Ausgabe sämtlicher Parameter
+```
+
+Wenn Sie mit der Konfigurationsdatei zufrieden sind, können Sie sshd neu laden, um die neuen Einstellungen anzuwenden:
+```Shell
+  $ sudo service sshd reload #SSH-Daemon neu starten / aktuelles Config-file einlesen
+```
+
+
+<br>
+
 ---
 
 ### Client installieren

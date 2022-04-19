@@ -307,7 +307,9 @@ Bevor man die Konfigurationsdatei bearbeitet, können die aktuell festgelegten O
 Screenshot (Beispiel):<br>
    ![Screenshot](images/12_sshd_config_800.png)
 
-Als erstes muss für den Root-Account die Anmeldung über SSH **deaktiviert** werden:
+<br>
+
+1. Als erstes muss für den Root-Account die Anmeldung über SSH **deaktiviert** werden:
 
 ```Shell
   $ vi /etc/ssh/sshd_config #Datei in einem Editor öffnen
@@ -333,6 +335,27 @@ Folgendes Bild verdeutlicht die Authentifizierung von den beiden Benutzern **Nor
 4. Beide sind nun auf dem Zielrechner eingeloggt, haben aber unterschiedliche Berechtigungen (Norris kann Root-Recht erlangen, Ricciardo nicht)
     
 
+2. Als Nächstes sollte die maximale Anzahl der Authentifizierungsversuche für eine bestimmte Anmeldesitzung wie folgt begrenzt werden:
+
+Parameter **MaxAuthTries** auf **3** setzen
+```Shell
+  MaxAuthTries 3
+```
+Für die meisten Einstellungen ist ein Standardwert von 3 akzeptabel. Man kann hier jedoch je nach eigener Risikoschwelle einen höheren oder niedrigeren Wert festlegen.
+
+3. Bei Bedarf eine reduzierte Anmeldefrist festgelegt werden. Das ist die Zeitspanne, in der ein Benutzer die Authentifizierung abschließen muss, nachdem er sich mit dem SSH-Server verbunden hat:
+
+Parameter **LoginGraceTime** auf z.B. **20** setzen
+```Shell
+  LoginGraceTime 20
+```
+Die Konfigurationsdatei gibt diesen Wert in **Sekunden** an.
+
+Eine Einstellung auf einen niedrigeren Wert kann helfen, bestimmte **Denial-of-Service-Angriffe** zu verhindern, bei denen mehrere Authentifizierungssitzungen für einen **längeren Zeitraum** offen gehalten werden.
+
+4. Wenn SSH-Schlüssel für die Authentifizierung konfiguriert wurden anstatt Passwörter zu verwenden, kann die SSH-Passwortauthentifizierung deaktiviert werden. So wird verhindert, dass sich ein Angreifer mit **geleakten Benutzerpasswörtern** anmelden kann.
+
+
 
 
 
@@ -352,6 +375,6 @@ ___
 
 - [SSH - Ubuntuusers][30]
 - [Working with SSH Key Passphrases][31]
-- [sshd_config][32]
+- [sshd_config - openbsd Manpages][32]
 - [SSH härten][33]
 - [OpenSSH Public Key Authentifizierung unter Ubuntu][34]

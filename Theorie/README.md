@@ -329,13 +329,18 @@ Folgendes Bild verdeutlicht die Authentifizierung von den beiden Benutzern **Nor
    ![Screenshot](images/13_SSH_SUDO_v2_800.jpg)
 
 
-1. Beide verbinden sich via **SSH** mit dem Server
-2. Die Authentifizierung findet mittels Private- und Public-Key statt. Da beide ihren Public-Key auf dem Server hinterlegt haben, können sie sich einloggen.
-3. Beide durchlaufen das **/etc/sudoers.conf**. Hier wird jedem Benutzer die ihm zugewiesenen Berechtigungen zugeteilt. 
-4. Beide sind nun auf dem Zielrechner eingeloggt, haben aber unterschiedliche Berechtigungen (Norris kann Root-Recht erlangen, Ricciardo nicht)
+**Punkt 1:** Beide verbinden sich via **SSH** mit dem Server
+
+**Punkt 2:** Die Authentifizierung findet mittels Private- und Public-Key statt. Da beide ihren Public-Key auf dem Server hinterlegt haben, können sie sich einloggen.
+
+**Punkt 3:** Beide durchlaufen das **/etc/sudoers.conf**. Hier wird jedem Benutzer die ihm zugewiesenen Berechtigungen zugeteilt. 
+
+**Punkt 4:** Beide sind nun auf dem Zielrechner eingeloggt, haben aber unterschiedliche Berechtigungen (Norris kann Root-Recht erlangen, Ricciardo nicht)
     
 
 2. Als Nächstes sollte die maximale Anzahl der Authentifizierungsversuche für eine bestimmte Anmeldesitzung wie folgt begrenzt werden:
+
+<br>
 
 Parameter **MaxAuthTries** auf **3** setzen
 ```Shell

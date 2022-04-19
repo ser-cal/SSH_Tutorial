@@ -337,6 +337,8 @@ Folgendes Bild verdeutlicht die Authentifizierung von den beiden Benutzern **Nor
 
 **Vierter Schritt:** Beide sind nun auf dem Zielrechner eingeloggt, haben aber unterschiedliche Berechtigungen (Norris kann Root-Recht erlangen, Ricciardo nicht)
 
+---
+
 <br>  
 
 **2.** Als Nächstes sollte die maximale Anzahl der Authentifizierungsversuche für eine bestimmte Anmeldesitzung wie folgt begrenzt werden:

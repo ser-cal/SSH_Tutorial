@@ -337,3 +337,11 @@ Folgendes Bild verdeutlicht die Authentifizierung von den beiden Benutzern **Nor
 1. Für die Client-Installation muss der Installer unter [dieser Webseite](https://git-scm.com/downloads) heruntergeladen werden 
 2. Die Installation erfolgt GUI-basiert, jedoch Standard (ohne speziellen Anpassungen). Daher wird an dieser Stelle auf eine Erklärung verzichtet.
 3. Sobald der Vorgang abgeschlossen wurde, kann mit der Konfiguration fortgefahren werden.
+
+
+<br><br>
+
+___
+
+![](images/SSH_Logo_36x36.png "SSH") 06 - Quellenverzeichnis 
+====

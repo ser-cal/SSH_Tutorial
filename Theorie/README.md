@@ -378,7 +378,7 @@ In den meisten Anwendungsfällen wird SSH mit der Authentifizierung mit **öffen
 ```
 Wenn Sie mehr über einige der in SSH verfügbaren zusätzlichen Authentifizierungsmethoden erfahren möchten, stehen Ihnen diese Ressourcen zur Verfügung:
 
-- [Challenge–response authentication]([https://en.wikipedia.org/wiki/Challenge%E2%80%93response_authentication)
+- [Challenge–response authentication](https://en.wikipedia.org/wiki/Challenge%E2%80%93response_authentication)
 - [Kerberos und SSH](https://docstore.mik.ua/orelly/networking_2ndEd/ssh/ch11_04.htm)
 - [GSSAPI-Authentifizierung](https://de.wikipedia.org/wiki/GSSAPI)
 

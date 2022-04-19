@@ -307,8 +307,9 @@ Bevor man die Konfigurationsdatei bearbeitet, können die aktuell festgelegten O
 Screenshot (Beispiel):<br>
    ![Screenshot](images/12_sshd_config_800.png)
 
-<br> 
---- 
+<br>
+
+---
 
 **1.** Als erstes muss für den Root-Account die Anmeldung über SSH **deaktiviert** werden:
 

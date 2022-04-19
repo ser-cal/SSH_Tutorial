@@ -309,8 +309,6 @@ Screenshot (Beispiel):<br>
 
 <br>
 
----
-
 **1.** Als erstes muss für den Root-Account die Anmeldung über SSH **deaktiviert** werden:
 
 ```Shell
@@ -340,7 +338,6 @@ Folgendes Bild verdeutlicht die Authentifizierung von den beiden Benutzern **Nor
 **Vierter Schritt:** Beide sind nun auf dem Zielrechner eingeloggt, haben aber unterschiedliche Berechtigungen (Norris kann Root-Recht erlangen, Ricciardo nicht)
 
 <br> 
---- 
 
 **2.** Als Nächstes sollte die maximale Anzahl der Authentifizierungsversuche für eine bestimmte Anmeldesitzung wie folgt begrenzt werden:
 
@@ -351,7 +348,7 @@ Parameter **MaxAuthTries** auf **3** setzen
 ```
 Für die meisten Einstellungen ist ein Standardwert von 3 akzeptabel. Man kann hier jedoch je nach eigener Risikoschwelle einen höheren oder niedrigeren Wert festlegen.
 
-
+<br>
 
 **3.** Bei Bedarf eine reduzierte Anmeldefrist festgelegt werden. Das ist die Zeitspanne, in der ein Benutzer die Authentifizierung abschließen muss, nachdem er sich mit dem SSH-Server verbunden hat:
 

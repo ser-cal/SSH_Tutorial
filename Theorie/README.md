@@ -416,6 +416,19 @@ ___
 
 <br>
 
+
+<br><br>
+___
+
+![](images/Lupe_36x36.png "SSH") 04 - Analyse 
+====
+
+> [⇧ **Nach oben**](#inhaltsverzeichnis)
+
+Es gibt verschiedene 
+
+
+
 ----
 
 <br>

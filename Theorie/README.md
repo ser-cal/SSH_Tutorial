@@ -390,7 +390,7 @@ Weitere Ressourcen zu diesen Authentifizierungsvarianten:
 
 <br>
 
-Validieren Sie nun die Syntax Ihrer neuen Konfiguration, indem Sie sshd im Testmodus ausführen:
+Die Syntax der neuen Konfiguration kann validiert werden, indem **sshd** nochmals im Testmodus ausgeführt wird:
 ```Shell
   $ sudo sshd -T #Validierung/Ausgabe sämtlicher Parameter
 ```

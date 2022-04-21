@@ -263,12 +263,12 @@ Eintrag in der letzten Zeile
 <br>
 
 **Versuch 1**: in diesem Fall funktioniert es **nicht** (Reset/Abbruch) <br>
-Zugriff von **10.3.37.40** auf den Zielrechner **10.3.37.42** (rechts unten, Blau). Dieser Rechner hat **keine Exception** und darf somit **nicht zugreifen**:
+Zugriff von **10.3.37.42** (rechts unten, Blau) auf den Zielrechner **10.3.37.40** (links). Dieser Rechner hat **keine Exception** und darf somit **nicht zugreifen**:
 
-Befehle auf System **10.3.37.40**:
+Befehle auf System **10.3.37.42**:
 ```Shell
-  $ ip address show wg0 #wg0 IP 10.3.37.40
-  $ ssh mclaren@10.3.37.42 #Zugriff auf 10.3.37.42
+  $ hostname #Zeigt den Hostname an
+  $ ssh mclaren@10.3.37.40 #Zugriff auf 10.3.37.40
 ```
 
 Screenshot (Beispiel):<br>
@@ -279,13 +279,12 @@ Es erscheint die Meldung "Connection reset by peer". Der Verbindungsaufbau wurde
 <br>
 
 **Versuch 2**: in diesem Fall funktioniert es (Success) <br>
-Zugriff von **10.3.37.41** auf den Zielrechner **10.3.37.42**. Dieser Rechner hat **eine Exception** und darf somit **zugreifen**:
+Zugriff von **10.3.37.41** (rechts oben) auf den Zielrechner **10.3.37.42**. Dieser Rechner hat **eine Exception** und darf somit **zugreifen**:
 
 Befehle auf System **10.3.37.41**:
 ```Shell
   $ hostname #Wir befinden uns auf 
-  $ ip address show wg0 #wg0 IP 10.3.37.41
-  $ ssh mclaren@10.3.37.42 #Zugriff auf 10.3.37.42
+  $ ssh ferrari@10.3.37.40 #Zugriff auf 10.3.37.40
 ```
 Screenshot (Beispiel):<br>
    ![Screenshot](images/11_SSH_800.png)

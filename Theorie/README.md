@@ -433,6 +433,8 @@ In unserem Fall hat der Server einen Public-Key gefunden und damit die Zufallsza
 
 **1.** Zuerst sollte, wie eigentlich immer, sichergestellt werden, dass die Netzwerkverbindung auf **TCP/IP-Layer 1 bis 3** sichergestellt ist (z.B. mit einem Ping) - darauf achten dass das Layer-3 Protokoll **ICMP** von beiden Hosts zugelassen wird.
 
+<br>
+
 **2.** auf dem **SSH-Server** überprüfen, ob der Dienst korrekt läuft:
 ```Shell
   $ sudo systemctl status sshd #ssh-Dienst checken
@@ -442,6 +444,7 @@ Screenshot (Beispiel):<br>
 
 In diesem Screenshot sieht man weiter unten auch gleich noch einen Auszug aus dem **auth_log**-File. Benutzer, die auf dieses System zugegriffen haben hinterlassen Spuren (dazu gleich mehr bei Punkt 4)
 
+<br>
 
 **3.** Die **SSH-Verbindung** mit dem **Verbose-Flag** ergänzen. Es werden sehr viel mehr Informationen am Terminal ausgegeben: 
 ```Shell
@@ -451,6 +454,8 @@ Screenshot (Beispiel):<br>
    ![Screenshot](images/16_SSH_verbose_800.png)
 
 ...auf dem Screenshot sind nur die ersten Zeilen des Outputs. Dieser ist sehr viel länger und zeigt Schritt für Schritt und nachvollziehbar auf, wie die Authentifizierung zwischen Client und Server abläuft.
+
+<br>
 
 **4. Logfile-Analyse**: Jeder Dienst muss nach der Installation konfiguriert werden (Details oben bereits behandelt). Dabei wird auch festgehalten, wie Anwendung journalisiert wird. In grösseren Firem werden dazu sogenannte **Loghosts** eingesetzt. Diese sammeln verschiedenste Informationen und bestimmen anschliessend, was damit geschieht. In unserem Fall wurde nichts angepasst und so sind die Logfiles auf Linux- und Unix-Umgebungen standardmässig im Verzeichnis **/var** abgelegt. Das Logfile für die Zugriffsauthentifizierung nennt sich **auth.log** und liegt unter **/var/log**.
 ```Shell
@@ -462,6 +467,17 @@ Screenshot (Beispiel):<br>
 
 Im Beispiel oben sieht man einen Auszug dieses Logfiles. Dabei kann man dieselben Einträge wiedererkennen, die weiter oben bereits bei der Kontrolle des Dienstes ausgegeben wurden. Hier ist allerdings die gesamte Historie abgelegt. Mit dem **zweiten Befehl** werden sämtliche Zeilen ausgegeben, die vom **SSH-Dienst** verzeichnet wurden 
 
+<br>
+
+**5. Advanced-Analyse**: J
+Für Fortgeschrittene gibt es noch die Möglichkeit, auf der zugehörigen Netzwerkkarte den Port 22 zu sniffen. Dafür bietet sich z.B. Wireshark an. Man kann allerdings auch auf der Kommandozeile entsprechende Befehle eingeben und den Output z.B. in ein File umleiten, um später in Ruhe zu **debuggen**. 
+
+```Shell
+  $ ifconfig -a # Netzwerkschnittstelle checken
+  $ sudo tcpdump -n -i wg0 tcp port 22 and host 10.3.37.41 # Sniffe auf wg0 Port 22 mit IP 10.3.37.41 
+```
+Screenshot (Beispiel):<br>
+   ![Screenshot](images/17_SSH_sniffing_800.jpg)
 
 
 <br>

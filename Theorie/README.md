@@ -260,6 +260,11 @@ Eintrag in der letzten Zeile
   # ALL: PARANOID
   ALL: ALL EXCEPT 10.3.37.41
 ```
+
+Screenshot (Beispiel):<br>
+   ![Screenshot](images/12_exception_800.jpg)
+
+
 <br>
 
 **Versuch 1**: in diesem Fall funktioniert es **nicht** (Reset/Abbruch) <br>

@@ -442,7 +442,7 @@ In unserem Fall hat der Server einen Public-Key gefunden und damit die Zufallsza
 Screenshot (Beispiel):<br>
    ![Screenshot](images/15_SSH_Dienst_aktiv_800.png)
 
-In diesem Screenshot sieht man weiter unten auch gleich noch einen Auszug aus dem **auth_log**-File. Benutzer, die auf dieses System zugegriffen haben hinterlassen Spuren (dazu gleich mehr bei Punkt 4)
+In diesem Screenshot sieht man weiter unten auch gleich noch einen Auszug aus dem **auth.log**-File. Benutzer, die auf dieses System zugegriffen haben hinterlassen Spuren (dazu gleich mehr bei Punkt 4)
 
 <br>
 

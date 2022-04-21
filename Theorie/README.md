@@ -224,7 +224,7 @@ Noch **bevor** der SSH-Daemon ins Spiel kommt, kann ich auf meinem System überg
 
   ### Anwendungsfall
 
-  Im folgenden Beispiel werden auf dem System **10.3.37.40** (Bild unten, gelbes Feld links) im **/etc/hosts.deny** sämtliche Zugriffe von "entfernten" Systemen unterbunden - mit einer Ausnahme: Das System mit der IP-Adresse **10.3.37.41** (Bild unten, oranges Feld oben rechts), welches mit einem "EXCEPT"-Eintrag von dieser Regel ausgeschlossen wird.Beide Systeme auf der rechten Seite möchten auf das linke System zugreifen  (1a, 1b). Zugriff erhält aber nur dasjenige, welches im /etc/hosts.deny berechtigt wurde (3a).  
+  Im folgenden Beispiel werden auf dem System **10.3.37.40** (Bild unten links, gelbes Feld) im **/etc/hosts.deny** sämtliche Zugriffe von "entfernten" Systemen unterbunden - mit einer Ausnahme: Das System mit der IP-Adresse **10.3.37.41** (Bild oben rechts, oranges Feld), welches mit einem "EXCEPT"-Eintrag von dieser Regel ausgeschlossen wird.Beide Systeme auf der rechten Seite möchten auf das linke System zugreifen  (1a, 1b). Zugriff erhält aber nur dasjenige, welches im /etc/hosts.deny berechtigt wurde (3a).  
   
   Dieselbe Bedingung könnte auch erfüllt werden, wenn stattdessen ein entsprechender Eintrag im **/etc/hosts.allow** gemacht würde.
 

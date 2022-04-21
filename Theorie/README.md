@@ -485,7 +485,7 @@ Im Beispiel oben sieht man einen Auszug dieses Logfiles. Dabei kann man dieselbe
 
 <br>
 
-**5. Advanced-Analyse**: J
+**5. Advanced-Analyse**:
 Für Fortgeschrittene gibt es noch die Möglichkeit, auf der zugehörigen Netzwerkkarte den Port 22 zu sniffen. Dafür bietet sich z.B. Wireshark an. Man kann allerdings auch auf der Kommandozeile entsprechende Befehle eingeben und den Output z.B. in ein File umleiten, um später in Ruhe zu **debuggen**. 
 
 ```Shell

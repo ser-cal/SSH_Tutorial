@@ -405,7 +405,7 @@ Wenn Sie mit der Konfigurationsdatei zufrieden sind, können Sie sshd neu laden,
 <br><br>
 ___
 
-![](images/Lupe_36x36.png "Analyse") 04 - Analyse-und-debugging 
+![](images/Lupe_36x36.png "Analyse") 04 - Analyse und Debugging 
 ====
 
 > [⇧ **Nach oben**](#inhaltsverzeichnis)
@@ -487,7 +487,7 @@ Dies ist nur eine Möglichkeit, wie man mit Regeln und Parametern die Datenerheb
 
 ___
 
-![](images/Library_Logo_36x36.png "SSH") 05 - Quellenverzeichnis 
+![](images/Library_Logo_36x36.png "Quellenverzeichnis") 05 - Quellenverzeichnis 
 ====
 
 - [SSH - Ubuntuusers][30]

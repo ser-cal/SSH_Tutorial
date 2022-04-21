@@ -441,7 +441,7 @@ In unserem Fall hat der Server einen Public-Key gefunden und damit die Zufallsza
 
 ### Debugging SSH:
 
-**1.** Zuerst sollte, wie eigentlich immer, sichergestellt werden, dass die Netzwerkverbindung auf **TCP/IP-Layer 1 bis 3** sichergestellt ist (z.B. mit einem Ping) - darauf achten dass das Layer-3 Protokoll **ICMP** von beiden Hosts zugelassen wird.
+**1.** Zuerst sollte, wie eigentlich immer, sichergestellt werden, dass die Netzwerkverbindung auf **TCP/IP-Layer 1 bis 3** funktioniert (z.B. mit einem Ping) - darauf achten dass das Layer-3 Protokoll **ICMP** von beiden Hosts zugelassen wird.
 
 <br>
 

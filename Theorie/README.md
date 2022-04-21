@@ -457,7 +457,7 @@ Screenshot (Beispiel):<br>
 
 <br>
 
-**4. Logfile-Analyse**: Jeder Dienst muss nach der Installation konfiguriert werden (Details oben bereits behandelt). Dabei wird auch festgehalten, wie Anwendung journalisiert wird. In grösseren Firem werden dazu sogenannte **Loghosts** eingesetzt. Diese sammeln verschiedenste Informationen und bestimmen anschliessend, was damit geschieht. In unserem Fall wurde nichts angepasst und so sind die Logfiles auf Linux- und Unix-Umgebungen standardmässig im Verzeichnis **/var** abgelegt. Das Logfile für die Zugriffsauthentifizierung nennt sich **auth.log** und liegt unter **/var/log**.
+**4. Logfile-Analyse**: Jeder Dienst muss nach der Installation konfiguriert werden (Details oben bereits behandelt). Dabei wird auch festgehalten, wie Anwendung journalisiert werden. In grösseren Firem werden dazu sogenannte **Loghosts** eingesetzt. Diese sammeln verschiedenste Informationen und bestimmen anschliessend, was damit geschieht. In unserem Fall wurde nichts angepasst und so sind die Logfiles auf Linux- und Unix-Umgebungen standardmässig im Verzeichnis **/var** abgelegt. Das Logfile für die Zugriffsauthentifizierung nennt sich **auth.log** und liegt unter **/var/log**.
 ```Shell
   $ sudo tail -30 /var/log/auth.log # Zeige die letzten 30 Zeilen des Logfiles
   $ sudo cat /var/log/auth.log | grep sshd # Zeige alle sshd-Einträge

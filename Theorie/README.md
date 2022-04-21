@@ -354,7 +354,7 @@ Folgendes Bild verdeutlicht die Authentifizierung von den beiden Benutzern **Nor
    ![Screenshot](images/13_SSH_SUDO_v2_800.jpg)
 
 
-- **Erster Schritt:** Beide verbinden sich via **SSH** mit dem Server
+- **Erster Schritt:** Beide Clients (Norris und Ricciardo) verbinden sich von unterschiedlichen Clients via **SSH** mit dem Server
 
 - **Zweiter Schritt:** Die Authentifizierung findet mittels Private- und Public-Key statt. Da beide ihren Public-Key auf dem Server hinterlegt haben, können sie sich einloggen.
 

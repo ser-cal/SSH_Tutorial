@@ -37,7 +37,7 @@ Um sich im Filesystem zurechtzufinden, sind folgende Unix-Commands nützlich:
 * Die Windows Befehle stehen auch im Terminal zur Verfügung, z.B. `notepad README.md` 
 
 #### SSH-Befehle
-Hier nur eine kleine Auswahl davon. Mit SSH kann man nicht nur sicher auf entfernten Systemen einloggen. Es gibt unzählige weitere Anwendungen, die damit realisierbar sind. Verschlüsselt und sehr schnell.
+Mit SSH kann man nicht nur sicher auf entfernten Systemen einloggen. Es gibt noch unzählige weitere Anwendungen, die damit realisierbar sind. Verschlüsselt und sehr schnell. Hier drei Beispiele, die in der Praxis sehr oft genutzt werden:
 
  * `ssh <benutzer>@<ip>` SSH-Verbindung eines Benutzers auf ein anderes System
  * `scp <filename>@<ip>:<Verzeichnis` Kopieren von Dateien auf ein anderes System

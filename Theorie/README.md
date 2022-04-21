@@ -438,7 +438,7 @@ Der Ablauf wird weiter unten erklärt:
 
 - **Erster Schritt:** Ein bestimmter Benutzer auf dem Client (z.B. ubuntu) sendet dem Server eine **Verbindungsanfrage**.
 
-- **Zweiter Schritt:** Der Server schaut lokal bei sich nach, ob dieser bestimmte Benutzer einen **Public-Key** hinterlegt hat. Falls ja, schickt er dem Client eine Zufallszahl zurück, die er (**achtung wichtig!!**) vorher mit dem **Private Key** des entsprechenden Benutzers verschlüsselt hat. Falls kein Private-Key hinterlegt ist, muss sich der Client mit seinem gewöhnlichen Passwort authentifizieren.
+- **Zweiter Schritt:** Der Server schaut lokal bei sich nach, ob dieser bestimmte Benutzer einen **Public-Key** hinterlegt hat. Falls ja, schickt er dem Client eine Zufallszahl zurück, die er (**achtung wichtig!!**) vorher mit genau diesem **Public Key** des entsprechenden Benutzers verschlüsselt hat. Falls auf dem Zielsystem **kein Public-Key** hinterlegt ist, muss sich der Client mit seinem gewöhnlichen Passwort authentifizieren. Auch bei dieser Variante muss er natürlich auf dem Zielhost dafür berechtig sein.
 In unserem Fall hat der Server einen Public-Key gefunden und damit die Zufallszahl **encrypted** und dem Benutzer auf dem Client zurückgeschickt.
 
 - **Dritter Schritt:** Damit der Benutzer des Clients auf dem Server zugelassen wird, muss er die erhaltene Zufallszahl mit seinem **Private Key decrypten** (entschlüsseln). Anschliessend sendet er die entschlüsselte Zufallszahl dem Server zurück, dieser vergleicht den erhaltenen Wert mit dem vorher versandten Wert. Falls beide übereinstimmen, wird die Verbindung zugelassen und aufgebaut (Grüner Doppelpfeil).

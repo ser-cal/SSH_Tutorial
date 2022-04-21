@@ -490,6 +490,8 @@ ___
 ![](images/Library_Logo_36x36.png "Quellenverzeichnis") 05 - Quellenverzeichnis 
 ====
 
+> [⇧ **Nach oben**](#inhaltsverzeichnis)
+
 - [SSH - Ubuntuusers][30]
 - [Working with SSH Key Passphrases][31]
 - [sshd_config - openbsd Manpages][32]

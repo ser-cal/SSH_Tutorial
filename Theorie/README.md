@@ -412,8 +412,20 @@ ___
 
 Bei der Anwendung von SSH können immer wieder mal Probleme auftreten. Meistens gibt uns die entsprechende Rückmeldung gute Anhaltspunkte, um mit einem zielführenden **Debugging** loszulegen. Es ist deshalb unerlässlich, das Grundprinzip dieses Client/Server-Dienstes gut verstanden zu haben.
 
-Die folgende Darstellung zeigt nochmals, wie der Verbindungsaufbau und die Authentisierung zwischen Client und Server abläuft. Wie so oft bei Client/Server-Diensten sind **drei Schritte** dazu notwendig.
+Die folgende Darstellung zeigt nochmals, wie der Verbindungsaufbau und die Authentisierung beim **SSH-Dienst** abläuft. Wie so oft bei Client/Server-Diensten sind auch hier **drei Schritte** notwendig.
 
+Der Ablauf wird weiter unten erklärt:
+
+**Illustration:**
+
+   ![Screenshot](images/14_SSH_Keyaustausch_800.jpg)
+
+- **Erster Schritt:** Ein bestimmter Benutzer auf dem Client (z.B. ubuntu) sendet dem Server eine **Verbindungsanfrage**.
+
+- **Zweiter Schritt:** Der Server schaut lokal bei sich nach, ob dieser bestimmte Benutzer einen **Public-Key** hinterlegt hat. Falls ja, schickt er dem Client eine Zufallszahl zurück, die er (**achtung wichtig!!**) vorher mit dem **Private Key** des entsprechenden Benutzers verschlüsselt hat. Falls kein Private-Key hinterlegt ist, muss sich der Client mit seinem gewöhnlichen Passwort authentifizieren.
+In unserem Fall hat der Server einen Public-Key gefunden und damit die Zufallszahl **encrypted** und dem Benutzer auf dem Client zurückgeschickt.
+
+- **Dritter Schritt:** Damit der Benutzer des Clients auf dem Server zugelassen wird, muss er die erhaltene Zufallszahl mit seinem **Private Key decrypten** (entschlüsseln). Anschliessend sendet er die entschlüsselte Zufallszahl dem Server zurück, dieser vergleicht den erhaltenen Wert mit dem vorher versandten Wert. Falls beide übereinstimmen, wird die Verbindung zugelassen und aufgebaut (Grüner Doppelpfeil).
 
 
 <br>

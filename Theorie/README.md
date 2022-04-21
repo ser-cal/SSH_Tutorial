@@ -452,14 +452,15 @@ Screenshot (Beispiel):<br>
 
 ...auf dem Screenshot sind nur die ersten Zeilen des Outputs. Dieser ist sehr viel länger und zeigt Schritt für Schritt und nachvollziehbar auf, wie die Authentifizierung zwischen Client und Server abläuft.
 
-**4. Logfile-Analyse**: Jeder Dienst muss nach der Installation konfiguriert werden (Details oben bereits behandelt). Dabei wird auch festgehalten, wie Anwendung journalisiert wird. In grösseren Firem werden dazu sogenannte **Loghosts** eingesetzt. Diese sammeln verschiedenste Informationen und bestimmen anschliessend, was damit geschieht. In unserem Fall wurde nichts angepasst und so sind die Logfiles auf Linux- und Unix-Umgebungen standardmässig im Verzeichnis **/var** abgelegt. Das Logfile für die Zugriffsauthentifizierung nennt sich **auth.log** und liegt unter **/var/log**. Im folgenden Beispiel ein Auszug dieses Logfiles. Dabei kann man dieselben Einträge wiedererkennen, die weiter oben bereits bei der Kontrolle des Dienstes ausgegeben werden. Hier ist allerdings die gesamte Historie abgelegt. 
+**4. Logfile-Analyse**: Jeder Dienst muss nach der Installation konfiguriert werden (Details oben bereits behandelt). Dabei wird auch festgehalten, wie Anwendung journalisiert wird. In grösseren Firem werden dazu sogenannte **Loghosts** eingesetzt. Diese sammeln verschiedenste Informationen und bestimmen anschliessend, was damit geschieht. In unserem Fall wurde nichts angepasst und so sind die Logfiles auf Linux- und Unix-Umgebungen standardmässig im Verzeichnis **/var** abgelegt. Das Logfile für die Zugriffsauthentifizierung nennt sich **auth.log** und liegt unter **/var/log**.
 ```Shell
   $ sudo tail -30 /var/log/auth.log # Zeige die letzten 30 Zeilen des Logfiles
+  $ sudo cat /var/log/auth.log | grep sshd # Zeige alle sshd-Einträge
 ```
 Screenshot (Beispiel):<br>
    ![Screenshot](images/16_SSH_logfile_800.png)
 
-...auf dem Scre
+Im Beispiel oben sieht man einen Auszug dieses Logfiles. Dabei kann man dieselben Einträge wiedererkennen, die weiter oben bereits bei der Kontrolle des Dienstes ausgegeben wurden. Hier ist allerdings die gesamte Historie abgelegt. Mit dem **zweiten Befehl** werden sämtliche Zeilen ausgegeben, die vom **SSH-Dienst** verzeichnet wurden 
 
 
 

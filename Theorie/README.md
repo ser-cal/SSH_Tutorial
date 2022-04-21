@@ -231,7 +231,7 @@ Noch **bevor** der SSH-Daemon ins Spiel kommt, kann ich auf meinem System überg
    ![Screenshot](images/12_SSH-Lab_v2_800.jpg)
 
 
-**Host: 10.3.37.42** wie folgt konfigurieren:
+**Host: 10.3.37.40** wie folgt konfigurieren:
 
 Konfigurationsfile mit Editor öffnen
 ```Shell

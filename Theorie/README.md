@@ -272,7 +272,7 @@ Befehle auf System **10.3.37.40**:
 ```
 
 Screenshot (Beispiel):<br>
-   ![Screenshot](images/10_SSH_800.png)
+   ![Screenshot](images/10_SSH_800.jpg)
 
 Es erscheint die Meldung "Connection reset by peer". Der Verbindungsaufbau wurde somit abgebrochen; ich bleibe auf meinem Host.
 

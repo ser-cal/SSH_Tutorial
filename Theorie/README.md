@@ -433,20 +433,34 @@ In unserem Fall hat der Server einen Public-Key gefunden und damit die Zufallsza
 
 **1.** Zuerst sollte, wie eigentlich immer, sichergestellt werden, dass die Netzwerkverbindung auf **TCP/IP-Layer 1 bis 3** sichergestellt ist (z.B. mit einem Ping) - darauf achten dass das Layer-3 Protokoll **ICMP** von beiden Hosts zugelassen wird.
 
-**2.** auf dem **SSH-Server** überprüfen, ob der Dienst korrekt läuft
-
-Befehl:
+**2.** auf dem **SSH-Server** überprüfen, ob der Dienst korrekt läuft:
 ```Shell
   $ sudo systemctl status sshd #ssh-Dienst checken
 ```
 Screenshot (Beispiel):<br>
    ![Screenshot](images/15_SSH_Dienst_aktiv_800.png)
 
-In diesem Screenshot sieht man weiter unten auch gleich noch einen Auszug aus dem **auth_log**-File - Benutzer, die auf dieses System zugegriffen haben (dazu gleich mehr)
+In diesem Screenshot sieht man weiter unten auch gleich noch einen Auszug aus dem **auth_log**-File. Benutzer, die auf dieses System zugegriffen haben hinterlassen Spuren (dazu gleich mehr bei Punkt 4)
 
 
+**3.** Die **SSH-Verbindung** mit dem **Verbose-Flag** ergänzen. Es werden sehr viel mehr Informationen am Terminal ausgegeben: 
+```Shell
+  $ ssh -v <user@IP-Adresse> # v-Flag (Verbose)
+```
+Screenshot (Beispiel):<br>
+   ![Screenshot](images/16_SSH_verbose_800.png)
 
-**1.** :
+...auf dem Screenshot sind nur die ersten Zeilen des Outputs. Dieser ist sehr viel länger und zeigt Schritt für Schritt und nachvollziehbar auf, wie die Authentifizierung zwischen Client und Server abläuft.
+
+**4.** Logfile-Analyse. Jeder Dienst muss nach der Installation konfiguriert werden (Details oben bereits behandelt). Dabei wird auch festgehalten, wie Anwendung journalisiert wird. In grösseren Firem werden dazu sogenannte **Loghosts** eingesetzt. Diese sammeln verschiedenste Informationen und bestimmen anschliessend, was damit geschieht. In unserem Fall wurde nichts angepasst und so sind die Logfiles auf Linux- und Unix-Umgebungen standardmässig im Verzeichnis **/var** abgelegt. Das Logfile für die Zugriffsauthentifizierung nennt sich **auth.log** und liegt unter **/var/log**. Im folgenden Beispiel ein Auszug dieses Logfiles. Dabei kann man dieselben Einträge wiedererkennen, die weiter oben bereits bei der Kontrolle des Dienstes ausgegeben werden. Hier ist allerdings die gesamte Historie abgelegt. 
+```Shell
+  $ sudo tail -30 /var/log/auth.log # Zeige die letzten 30 Zeilen des Logfiles
+```
+Screenshot (Beispiel):<br>
+   ![Screenshot](images/16_SSH_logfile_800.png)
+
+...auf dem Scre
+
 
 
 <br>

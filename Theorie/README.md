@@ -224,11 +224,13 @@ Noch **bevor** der SSH-Daemon ins Spiel kommt, kann ich auf meinem System überg
 
   ### Anwendungsfall
 
-  Im folgenden Beispiel werden auf dem System **10.3.37.40** (Bild unten, gelbes Feld links) im **/etc/hosts.deny** sämtliche Zugriffe von "entfernten" Systemen unterbunden - mit einer Ausnahme: Das System mit der IP-Adresse **10.3.37.41** (Bild unten, oranges Feld oben rechts), welches mit einem "EXCEPT"-Eintrag von dieser Regel ausgeschlossen wird. Dieselbe Bedingung könnte auch erfüllt werden, wenn stattdessen ein entsprechender Eintrag im **/etc/hosts.allow** gemacht würde.
+  Im folgenden Beispiel werden auf dem System **10.3.37.40** (Bild unten, gelbes Feld links) im **/etc/hosts.deny** sämtliche Zugriffe von "entfernten" Systemen unterbunden - mit einer Ausnahme: Das System mit der IP-Adresse **10.3.37.41** (Bild unten, oranges Feld oben rechts), welches mit einem "EXCEPT"-Eintrag von dieser Regel ausgeschlossen wird.Beide Systeme auf der rechten Seite möchten auf das linke System zugreifen  (1a, 1b). Zugriff erhält aber nur dasjenige, welches im /etc/hosts.deny berechtigt wurde (3a).  
+  
+  Dieselbe Bedingung könnte auch erfüllt werden, wenn stattdessen ein entsprechender Eintrag im **/etc/hosts.allow** gemacht würde.
 
 **Illustration:**
 
-   ![Screenshot](images/12_SSH-Lab_v2_800.jpg)
+   ![Screenshot](images/12_SSH-Lab_v3_800.jpg)
 
 
 **Host: 10.3.37.40** wie folgt konfigurieren:
@@ -261,7 +263,7 @@ Eintrag in der letzten Zeile
 <br>
 
 **Versuch 1**: in diesem Fall funktioniert es **nicht** (Reset/Abbruch) <br>
-Zugriff von **10.3.37.40** auf den Zielrechner **10.3.37.42**. Dieser Rechner hat **keine Exception** und darf somit **nicht zugreifen**:
+Zugriff von **10.3.37.40** auf den Zielrechner **10.3.37.42** (rechts unten, Blau). Dieser Rechner hat **keine Exception** und darf somit **nicht zugreifen**:
 
 Befehle auf System **10.3.37.40**:
 ```Shell

@@ -35,6 +35,12 @@ Um sich im Filesystem zurechtzufinden, sind folgende Unix-Commands nützlich:
 * `ls -l` zeigt die Dateien im aktuellen Verzeichnis an
 * `ls -al` zeigt sämtliche Dateien im aktuellen Verzeichnis an (auch die versteckten, wie z.B. **.ssh**, wo sämtliche Keys abgelegt werden)
 * Die Windows Befehle stehen auch im Terminal zur Verfügung, z.B. `notepad README.md` 
+ * `ssh <benutzer>@<ip>` SSH-Verbindung eines Benutzers auf ein anderes System
+ * `scp <filename>@<ip>:<Verzeichnis` Kopieren von Dateien auf ein anderes System
+  * `ssh -X <benutzer>@<IP-Adresse>` X-Window öffnen. Danach kann man GUI-Applikationen des Remote-Systems lokal öffnen -> z.B. gedit
+
+
+
  
 <br><br>
 

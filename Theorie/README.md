@@ -410,7 +410,9 @@ ___
 
 > [⇧ **Nach oben**](#inhaltsverzeichnis)
 
-Es gibt verschiedene 
+Bei der Anwendung von SSH können immer wieder mal Probleme auftreten. Meistens gibt uns die entsprechende Rückmeldung gute Anhaltspunkte, um mit einem zielführenden **Debugging** loszulegen. Es ist deshalb unerlässlich, das Grundprinzip dieses Client/Server-Dienstes gut verstanden zu haben.
+
+Die folgende Darstellung zeigt nochmals, wie der Verbindungsaufbau und die Authentisierung zwischen Client und Server abläuft. Wie so oft bei Client/Server-Diensten sind **drei Schritte** dazu notwendig.
 
 
 

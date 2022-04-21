@@ -412,7 +412,7 @@ ___
 
 Bei der Anwendung von SSH können immer wieder mal Probleme auftreten. Meistens gibt uns die entsprechende Rückmeldung gute Anhaltspunkte, um mit einem zielführenden **Debugging** loszulegen. Es ist deshalb unerlässlich, das Grundprinzip dieses Client/Server-Dienstes gut verstanden zu haben.
 
-Die folgende Darstellung zeigt nochmals, wie der Verbindungsaufbau und die Authentisierung beim **SSH-Dienst** abläuft. Wie so oft bei Client/Server-Diensten sind auch hier **drei Schritte** notwendig.
+Die folgende Darstellung zeigt nochmals, wie der Verbindungsaufbau und die Authentisierung beim **SSH-Dienst** abläuft. Wie so oft bei Client/Server-Diensten, sind auch hier **drei Schritte** notwendig.
 
 Der Ablauf wird weiter unten erklärt:
 

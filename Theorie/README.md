@@ -479,6 +479,9 @@ Für Fortgeschrittene gibt es noch die Möglichkeit, auf der zugehörigen Netzwe
 Screenshot (Beispiel):<br>
    ![Screenshot](images/17_SSH_sniffing_800.jpg)
 
+In diesem Beispiel oben wird das **tcpdump**-Kommando auf dem System mit der IP-Adresse 10.3.37.40 abgesetzt. Der **sniff** wird dabei so eingeschränkt, dass nur die Netzwerkkarte "wg0" (Wireguard-Schnittstelle) auf Port 22 überwacht wird. Hier wird noch zusätzlich eingeschränkt, dass **nur** Datenpackete des System mit der IP-Adresse **10.3.37.41** ausgegeben werden sollen.
+
+Dies ist nur eine Möglichkeit, wie man mit Regeln und Parametern die Datenerhebung gezielt eingrenzen kann. Wie oben bereits erwähnt, eher für **Fortgeschrittene** :-)
 
 <br>
 

@@ -11,8 +11,8 @@ Inhaltsverzeichnis
 * 01 - [Wichtige Linux-Kommandos](#-01---wichtige-linux-kommandos)
 * 02 - [SSH-Keys und SSH-Agent](#-02---ssh-keys-und-ssh-agent)
 * 03 - [Zentrale SSH Konfigurationsfiles](#-03---zentrale-ssh-konfigurationsfiles)
-* 04 - [Analyse](#-04---Analyse)
-* 06 - [Quellenverzeichnis](#-06---quellenverzeichnis)
+* 04 - [Analyse und Debugging](#-04---Analyse-und-debugging)
+* 05 - [Quellenverzeichnis](#-05---quellenverzeichnis)
 
 
 <br><br>
@@ -405,7 +405,7 @@ Wenn Sie mit der Konfigurationsdatei zufrieden sind, können Sie sshd neu laden,
 <br><br>
 ___
 
-![](images/Lupe_36x36.png "SSH") 04 - Analyse 
+![](images/Lupe_36x36.png "Analyse") 04 - Analyse-und-debugging 
 ====
 
 > [⇧ **Nach oben**](#inhaltsverzeichnis)
@@ -487,7 +487,7 @@ Dies ist nur eine Möglichkeit, wie man mit Regeln und Parametern die Datenerheb
 
 ___
 
-![](images/Library_Logo_36x36.png "SSH") 06 - Quellenverzeichnis 
+![](images/Library_Logo_36x36.png "SSH") 05 - Quellenverzeichnis 
 ====
 
 - [SSH - Ubuntuusers][30]

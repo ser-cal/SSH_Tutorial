@@ -427,6 +427,27 @@ In unserem Fall hat der Server einen Public-Key gefunden und damit die Zufallsza
 
 - **Dritter Schritt:** Damit der Benutzer des Clients auf dem Server zugelassen wird, muss er die erhaltene Zufallszahl mit seinem **Private Key decrypten** (entschlüsseln). Anschliessend sendet er die entschlüsselte Zufallszahl dem Server zurück, dieser vergleicht den erhaltenen Wert mit dem vorher versandten Wert. Falls beide übereinstimmen, wird die Verbindung zugelassen und aufgebaut (Grüner Doppelpfeil).
 
+<br> 
+
+### Debugging SSH:
+
+**1.** Zuerst sollte, wie eigentlich immer, sichergestellt werden, dass die Netzwerkverbindung auf **TCP/IP-Layer 1 bis 3** sichergestellt ist (z.B. mit einem Ping) - darauf achten dass das Layer-3 Protokoll **ICMP** von beiden Hosts zugelassen wird.
+
+**2.** auf dem **SSH-Server** überprüfen, ob der Dienst korrekt läuft
+
+Befehl:
+```Shell
+  $ sudo systemctl status sshd #ssh-Dienst checken
+```
+Screenshot (Beispiel):<br>
+   ![Screenshot](images/15_SSH_Dienst_aktiv_800.png)
+
+In diesem Screenshot sieht man weiter unten auch gleich noch einen Auszug aus dem **auth_log**-File - Benutzer, die auf dieses System zugegriffen haben (dazu gleich mehr)
+
+
+
+**1.** :
+
 
 <br>
 

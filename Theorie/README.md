@@ -40,7 +40,7 @@ Um sich im Filesystem zurechtzufinden, sind folgende Unix-Commands nützlich:
 Mit SSH kann man nicht nur sicher auf entfernten Systemen einloggen. Es gibt noch unzählige weitere Anwendungen, die damit realisierbar sind. Verschlüsselt und sehr schnell. Hier drei Beispiele, die in der Praxis sehr oft genutzt werden:
 
  * `ssh <benutzer>@<ip>` SSH-Verbindung eines Benutzers auf ein anderes System
- * `scp <filename>@<ip>:<Verzeichnis` Kopieren von Dateien auf ein anderes System
+ * `scp <benutzer>@<ip>:<Verzeichnis` Kopieren von Dateien auf ein anderes System
   * `ssh -X <benutzer>@<IP-Adresse>` X-Window öffnen. Danach kann man GUI-Applikationen des Remote-Systems lokal öffnen -> z.B. gedit
 
 
